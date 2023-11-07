@@ -11,7 +11,8 @@ export const theme = {
     body: 'Roboto, sans-serif',
   },
   fontSizes: {
-    heading: '1.5rem',
+    heading: '2.5rem',
+    subHeading: '1.75rem',
     body: '1rem',
     small: '0.75rem',
   },
