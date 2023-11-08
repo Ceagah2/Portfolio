@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Avatar } from '../../atoms/Avatar'
 import * as S from './styles'
-export const Header = () => {
+export const Header = (props: any) => {
+  const {code} = props
+  console.log('Código esta ativo?', code)
   return (
     <S.Container>
       <S.TitleRow>
