@@ -15,6 +15,11 @@ export const theme = {
     subHeading: '1.75rem',
     body: '1rem',
     small: '0.75rem',
+
+    mobileHeading: '1.75rem',
+    mobileSubHeading: '1.25rem',
+    mobileBody: '0.875rem',
+    mobileSmall: '0.625rem',
   },
   fontWeights: {
     light: 300,
