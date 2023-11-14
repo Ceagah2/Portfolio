@@ -13,18 +13,15 @@ export const theme = {
   fontSizes: {
     heading: '2.5rem',
     subHeading: '1.75rem',
+    sectionTitle: '1.5rem',
     body: '1rem',
     small: '0.75rem',
 
     mobileHeading: '1.75rem',
     mobileSubHeading: '1.25rem',
+    mobileSectionTitle: '1rem',
     mobileBody: '0.875rem',
     mobileSmall: '0.625rem',
   },
-  fontWeights: {
-    light: 300,
-    regular: 400,
-    medium: 500,
-    bold: 700,
-  }
+
 }
