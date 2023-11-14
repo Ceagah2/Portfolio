@@ -9,6 +9,7 @@ export const NavBar = (props: any) => {
       <S.Menu>
         {code && <S.MenuItem>{'< Secret Chamber >'}</S.MenuItem>}
         <S.MenuItem>{'< Bio />'}</S.MenuItem>
+        <S.MenuItem>{'< Job Experience />'}</S.MenuItem>
         <S.MenuItem>{'< My Projects />'}</S.MenuItem>
         <S.MenuItem>{'< Get in touch />'}</S.MenuItem>
       </S.Menu>

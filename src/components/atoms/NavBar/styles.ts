@@ -21,7 +21,7 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 10px;
 
   @media (max-width: 750px) {
