@@ -1,10 +1,9 @@
 import { ISectionContainer } from "../../../@types/types"
 import { SectionTitle } from "../SectionTitle"
 import * as S from "./styles"
-export const SectionContainer = ({ title, delay, children, key, orientation }: ISectionContainer) => {
+export const SectionContainer = ({ title, delay, children, orientation }: ISectionContainer) => {
   return(
     <S.Container
-      key={key}
       animate={{
         opacity: 1,
         x: 0,

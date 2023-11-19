@@ -1,7 +1,6 @@
 export interface ISectionContainer { 
   children: React.ReactNode
   title: string
-  key: number
   delay: number
   orientation?: 'start' | 'end';
 }
