@@ -6,9 +6,9 @@ import {messages, BioText} from '../utils/constants'
 import { Header } from "../components/organisms/Header"
 import { AudioComponent } from "../components/atoms/AudioPlay"
 import { AnimatedImage } from "../components/atoms/AnimationImage"
-import { JobExperience } from "../components/organisms/JobExperience"
 import { SectionContainer } from "../components/atoms/SectionContainer"
 import * as S from "./styles"
+import { JobExperience } from "../components/organisms/JobExperience"
 
 const Home = () => {
   const [code, setCode] = useState<boolean>(false)
@@ -47,12 +47,12 @@ const Home = () => {
         <AnimatedImage />
       </>}
       <S.MainContainer>
-        <SectionContainer title="Bio" delay={0.5} key={1} orientation="start">
+        <SectionContainer title="Bio" delay={0.5} orientation="start">
           <S.SectionText>
             {BioText}
           </S.SectionText>
         </SectionContainer>
-        <SectionContainer title="Job Experience" delay={1} key={2} orientation="end">
+        <SectionContainer title="Job Experience" delay={1} orientation="end">
           <JobExperience />
         </SectionContainer>
       </S.MainContainer>
