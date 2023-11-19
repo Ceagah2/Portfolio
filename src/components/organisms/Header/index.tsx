@@ -11,7 +11,7 @@ export const Header = (props: any) => {
       <S.TitleRow>
         <Avatar />
         <S.TextBox>
-          <S.AvatarImage src={avatarUrl} />
+          <S.AvatarImage src={avatarUrl} alt="Carlos Profile Picture"/>
           <S.Title>Hello, I'm <S.TitleSpan>Carlos Ceagah</S.TitleSpan>, Fantasy Forge CEO </S.Title>
           <S.TitleDetails>I specialize in crafting digital experiences with precision and passion, where the synergy of innovation and imagination unfolds</S.TitleDetails>
         </S.TextBox>
