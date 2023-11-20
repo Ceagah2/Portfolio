@@ -1,3 +1,5 @@
+import { IJobExperiences } from "../@types/types";
+
 export const messages = [
   'What happens when you enter the Konami Code?',
   'Have you unlocked the secret with the Konami Code?',
@@ -17,94 +19,92 @@ export const BioText = `
   I was on the verge of leaving everything at the time and enrolling in a gastronomy college. 
   It took very little for me not to be here now, sharing my portfolio with you.
 `
-
-export const JobExperiences = [
+export const JobExperiences: IJobExperiences[] = [
   {
     id: 1,
     title: 'Front-end Developer @ Oceaning Marketing and Training',
+    description: `
+      Develop the online menu application called KiosksFoods. This app was made with React Native, Expo and Node.js.
+      Develop the personal coaching web application called 'Metodo You'. This app was made with React and Node.js.
+    `,
     skills: [
-      {
-        js: 3,
-        css: 5,
-        html: 5,
-        react: 2,
-        native: 2,
-      }
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 2 },
+      { name: 'React Native', score: 2 },
     ],
     dateRange: '09/2020 to 03/2021'
   },
   {
     id: 2,
     title: 'Mobile Developer @ WT2 Blockchain and software',
+    description: `Develop the mobile application called 'Smart Houses'. This app was made with React Native, Expo and PHP.`,
     skills: [
-      {
-        js: 3,
-        css: 5,
-        html: 5,
-        native: 4,
-      }
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React Native', score: 3 },
     ],
     dateRange: '03/2021 to 04/2021'
   },
   {
     id: 3,
     title: 'Mobile Developer @ LKS Health and Wellness technologies',
+    description: `Develop new features to the mobile application called 'Posto7'. This app was made with React Native and Google Firebase`,
     skills: [
-      {
-        js: 3,
-        css: 5,
-        html: 5,
-        native: 4,
-        ts: 3
-      }
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React Native', score: 3 },
+      { name: 'TypeScript', score: 3 },
+      {name: 'Firebase', score: 2},
     ],
     dateRange: '04/2021 to 11/2021'
   },
   {
     id: 4,
     title: 'Front-end Developer @ Tecla T software solutions',
+    description: `Develop new features to third party companies. This are mostly web applications, developed with React + Typescript`,
     skills: [
-      {
-        js: 3,
-        css: 5,
-        html: 5,
-        react: 4,
-        ts: 3,
-      }
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 3 },
+      { name: 'TypeScript', score: 3 },
     ],
     dateRange: '12/2021 to 04/2022'
   },
   {
     id: 5,
-    title: 'Software Engineer @ Modern.tech (former Evolved Technologies)',
+    title: 'Software Engineer @ Evolved Technologies',
+    description: `Develop new features to the mobile and web application 'Showingly'. This application was developed with React, React native, Typescript and MongoDb with MongoRealm.`,
     skills: [
-      {
-        js: 4,
-        css: 5,
-        html: 5,
-        native: 4,
-        react: 4,
-        ts: 4,
-        mongo: 2,
-      }
+      { name: 'Javascript', score: 4 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 4 },
+      { name: 'React Native', score: 4 },
+      { name: 'TypeScript', score: 3 },
+      { name: 'MongoDB', score: 2 },
     ],
     dateRange: '04/2022 to 11/2022'
   },
   {
     id: 6,
     title: 'Front end developer @ Hero 99',
+    description: `Develop new applications to third party companies. These applications are 50/50 web and mobile. The web applications can be developed with React, Next.js or Vue.js. The mobile app can be developed in React native with or without Expo Framework, added with Typescript.`,
     skills: [
-      {
-        js: 4,
-        css: 5,
-        html: 5,
-        native: 4,
-        react: 4,
-        next: 4,
-        ts: 4,
-        wordpress: 2,
-      }
+      { name: 'Javascript', score: 4 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 4 },
+      { name: 'React Native', score: 4 },
+      { name: 'Next Js', score: 4 },
+      { name: 'TypeScript', score: 3 },
+      { name: 'MongoDB', score: 2 },
+      { name: 'Wordpress', score: 2 },
     ],
     dateRange: '12/2022 to Present days'
   },
-]
+];
