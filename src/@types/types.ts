@@ -5,16 +5,13 @@ export interface ISectionContainer {
   orientation?: 'start' | 'end';
 }
 export interface ISkills {
-  js: number
-  css: number
-  html: number
-  react?: number
-  native?: number
-  mongo?: number
+  name: string
+  score: number
 }
 export interface IJobExperiences {
   id: number
   title: string
+  description: string
   skills: ISkills[]
   dateRange: string
 }
