@@ -108,3 +108,20 @@ export const JobExperiences: IJobExperiences[] = [
     dateRange: '12/2022 to Present days'
   },
 ];
+
+export const PersonalProjects = [
+  {
+    id: 1,
+    title: 'Portfolio',
+    description: 'Personal website made with React and Typescript.',
+    image: null,
+    url: null
+  },
+  {
+    id: 2,
+    title: 'Wise Tasks (under development)',
+    description: 'A simple task manager, developed to other freelancers to help then to manage their projects easily and quick.',
+    image: null,
+    url: null
+  }
+]

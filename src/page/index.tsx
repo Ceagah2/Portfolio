@@ -9,6 +9,7 @@ import { AnimatedImage } from "../components/atoms/AnimationImage"
 import { SectionContainer } from "../components/atoms/SectionContainer"
 import * as S from "./styles"
 import { JobExperience } from "../components/organisms/JobExperience"
+import { MyProjects } from "../components/organisms/MyProjects"
 
 const Home = () => {
   const [code, setCode] = useState<boolean>(false)
@@ -18,7 +19,7 @@ const Home = () => {
     const randomIndex = Math.floor(Math.random() * messages.length);
     const randomMessage = messages[randomIndex];
 
-    console.log('🎮 Konami Code Easter Egg: ', randomMessage);
+    console.log('🎮 Gaming Easter Egg: ', randomMessage);
   }
 
   const animationTime = () => {
@@ -54,6 +55,9 @@ const Home = () => {
         </SectionContainer>
         <SectionContainer title="Job Experience" delay={1} orientation="end">
           <JobExperience />
+        </SectionContainer>
+        <SectionContainer title="My Projects" delay={1.5} orientation="start">
+          <MyProjects />
         </SectionContainer>
       </S.MainContainer>
     </S.Container>
