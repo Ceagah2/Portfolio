@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'; 
 import { theme } from '../../../styles/theme'
+import { Link } from 'react-router-dom';
 
 const barrelRoll = keyframes`
   0% {
@@ -75,4 +76,8 @@ export const MenuItem = styled.li`
    @media (max-width: 750px) {
     font-size: ${theme.fontSizes.mobileSubHeading};
   }
+`
+
+export const LinkItem = styled(Link)`
+  text-decoration: none;
 `

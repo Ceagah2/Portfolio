@@ -7,11 +7,17 @@ export const NavBar = (props: any) => {
   return(
     <S.Container>
       <S.Menu>
-        {code && <S.MenuItem>{'< Secret Chamber >'}</S.MenuItem>}
-        <S.MenuItem>{'< Bio />'}</S.MenuItem>
-        <S.MenuItem>{'< Job Experience />'}</S.MenuItem>
-        <S.MenuItem>{'< Personal Projects />'}</S.MenuItem>
-        <S.MenuItem>{'< Get in touch />'}</S.MenuItem>
+        {code && 
+          <S.LinkItem to="/secret-chamber">
+            <S.MenuItem>{'< Secret Chamber />'}</S.MenuItem>
+          </S.LinkItem>
+        }
+        <S.LinkItem to="/">
+          <S.MenuItem>{'< Main />'}</S.MenuItem>
+          </S.LinkItem>
+        <S.LinkItem to="/jobs">
+          <S.MenuItem>{'< Job Experience />'}</S.MenuItem>
+        </S.LinkItem>
       </S.Menu>
     </S.Container>
   )

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { theme } from '../../../styles/theme';
+import {Link} from 'react-router-dom';
 
 interface SkillSquareProps {
   score: number;
@@ -98,3 +99,17 @@ export const Progress = styled.div`
   height: 100%;
   border-radius: 5px;
 `;
+export const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+`;
+export const JobLink = styled(Link)`
+  text-decoration: none;
+  color: ${theme.colors.highLightPurple};
+  font-size: ${theme.fontSizes.body};
+  font-family: ${theme.fonts.body};
+`

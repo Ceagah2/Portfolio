@@ -2,14 +2,15 @@
 import { useEffect, useState } from "react"
 import AudioSource from '../../assets/item.wav'
 import { KonamiCode } from "../../utils/konami"
+import { FaChevronRight } from "react-icons/fa";
 import { Header } from "../../components/organisms/Header"
 import { AudioComponent } from "../../components/atoms/AudioPlay"
+import { MyProjects } from "../../components/organisms/MyProjects"
 import { AnimatedImage } from "../../components/atoms/AnimationImage"
 import {messages, BioText, JobExperiences} from '../../utils/constants'
 import { SectionContainer } from "../../components/atoms/SectionContainer"
-import { MyProjects } from "../../components/organisms/MyProjects"
-import * as J from "../../components/organisms/JobExperience/styles"
 import * as S from "./styles"
+import * as J from "../../components/organisms/JobExperience/styles"
 
 const Home = () => {
   const [code, setCode] = useState<boolean>(false)
@@ -77,6 +78,10 @@ const Home = () => {
                   </J.ProgressBar>
                 </div>
               ))}
+              <J.LinkContainer>
+                <J.JobDescription>See all my experiences</J.JobDescription>
+                <J.JobLink to={"/jobs"}>&nbsp; Here ! <FaChevronRight size={12}/></J.JobLink>
+              </J.LinkContainer>
             </J.SkillContainer>
           </J.JobContainer>
         </SectionContainer>
