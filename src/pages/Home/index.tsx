@@ -24,7 +24,6 @@ const Home = () => {
   }
   const lastExperience = JobExperiences[JobExperiences.length - 1];
 
-  console.log(lastExperience)
   const animationTime = () => {
     setIsAnimationActive(true)
     setTimeout(() => {
