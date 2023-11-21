@@ -12,7 +12,7 @@ export const Header = (props: any) => {
         <Avatar />
         <S.TextBox>
           <S.AvatarImage src={avatarUrl} alt="Carlos Profile Picture"/>
-          <S.Title>Hello, I'm <S.TitleSpan>Carlos Ceagah</S.TitleSpan>, Front end developer. </S.Title>
+          <S.Title>Hello, I'm <S.TitleSpan>Carlos Ceagah</S.TitleSpan>.</S.Title>
           <S.TitleDetails>I specialize in crafting digital experiences with precision and passion, where the synergy of innovation and imagination unfolds</S.TitleDetails>
         </S.TextBox>
       </S.TitleRow>
