@@ -109,19 +109,5 @@ export const JobExperiences: IJobExperiences[] = [
   },
 ];
 
-export const PersonalProjects = [
-  {
-    id: 1,
-    title: 'Portfolio',
-    description: 'Personal website made with React and Typescript.',
-    image: null,
-    url: null
-  },
-  {
-    id: 2,
-    title: 'Wise Tasks (under development)',
-    description: 'A simple task manager, developed to other freelancers to help then to manage their projects easily and quick.',
-    image: null,
-    url: null
-  }
-]
+export const USER_NAME = 'Ceagah2'
+export const AVATAR_URL = 'https://avatars.githubusercontent.com/u/133968337?s=400&u=ce1be67a31e9bc490c9d532419554ab9508d8537&v=4'
