@@ -1,9 +1,11 @@
 import Home from "./pages/Home"
 import Jobs from "./pages/Jobs"
-import SecretChamber from "./pages/Secret"
+import Forbidden from "./pages/404"
+
 import {
   RouterProvider,
   createBrowserRouter,
+  
 
 } from 'react-router-dom'
 
@@ -15,11 +17,12 @@ function App() {
     },
     {
       path: '/jobs',
+      
       element: <Jobs />
     },
     {
-      path:'/secret-chamber',
-      element: <SecretChamber />
+      path:'*',
+      element: <Forbidden />
     }
   ])
 
