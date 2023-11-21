@@ -1,38 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useState, useEffect } from "react"
-import { KonamiCode } from "../../utils/konami"
-import AudioSource from '../../assets/item.wav'
 import { Container, MainContainer } from "../Home/styles"
 import { Header } from '../../components/organisms/Header'
-import { AudioComponent } from "../../components/atoms/AudioPlay"
-import { AnimatedImage } from '../../components/atoms/AnimationImage'
 import { JobExperience } from "../../components/organisms/JobExperience"
 import { SectionContainer } from "../../components/atoms/SectionContainer"
 import * as S from './styles'
 const Jobs = () => {
-  const [code, setCode] = useState<boolean>(false)
-  const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false)
-  const animationTime = () => {
-    setIsAnimationActive(true)
-    setTimeout(() => {
-      setIsAnimationActive(false)
-    }, 1000)
-  }
-  const startAnimation = () => {
-    animationTime()
-  };
-
-  useEffect(() => {
-    KonamiCode({ setCode, startAnimation })
-  }, [])
   return(
     <Container>
-      <Header code={code} />
-      {isAnimationActive &&
-        <>
-          <AudioComponent audioSrc={AudioSource} />
-          <AnimatedImage />
-        </>}
+      <Header />
         <MainContainer>
           <S.JobHeader>
             <S.HeaderTitle>

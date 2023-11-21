@@ -1,16 +1,16 @@
 interface IKonami {
-  setCode : (code: boolean) => void
+  setSecretCode : (code: boolean) => void
   startAnimation: () => void
 }
 
-export const KonamiCode = ({ setCode, startAnimation }: IKonami) => {
+export const KonamiCode = ({ setSecretCode, startAnimation }: IKonami) => {
   let index = 0;
   const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
   const keydownHandler = (e: KeyboardEvent) => {
     if (e.key === konamiCode[index]) {
       index++;
       if (index === konamiCode.length) {
-        setCode(true)
+        setSecretCode(true)
         startAnimation()
         index = 0;
       }

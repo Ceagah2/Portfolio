@@ -1,5 +1,6 @@
 import Home from "./pages/Home"
 import Jobs from "./pages/Jobs"
+import SecretChamber from "./pages/Secret"
 import {
   RouterProvider,
   createBrowserRouter,
@@ -15,6 +16,10 @@ function App() {
     {
       path: '/jobs',
       element: <Jobs />
+    },
+    {
+      path:'/secret-chamber',
+      element: <SecretChamber />
     }
   ])
 
