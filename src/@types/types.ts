@@ -15,3 +15,10 @@ export interface IJobExperiences {
   skills: ISkills[]
   dateRange: string
 }
+
+export interface IProjectCard{
+  id: number
+  title: string
+  description: string
+  html_url: string
+}
