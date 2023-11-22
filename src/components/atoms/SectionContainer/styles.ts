@@ -11,6 +11,10 @@ export const Container = styled(motion.section) <{ orientation?: 'start' | 'end'
     margin-top: 40px;
   }
   align-items: ${(props) => (props.orientation === 'start' ? 'flex-start' : 'flex-end')};
+
+  @media (max-width: 450px) {
+    align-items: center; 
+  }
 `;
 
 Container.defaultProps = {
@@ -28,4 +32,7 @@ export const ChildContainer = styled.div`
   justify-content: center;
   margin-top: 20px;
   width: 50%;
+  @media (max-width: 450px) {
+    width: 100%; 
+  }
 `

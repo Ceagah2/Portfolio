@@ -2,12 +2,18 @@ import styled from 'styled-components'
 import {theme} from '../../../styles/theme'
 
 export const Container = styled.div`
-  width: 50vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
 `;
 
 export const ProjectsHeader = styled.div`

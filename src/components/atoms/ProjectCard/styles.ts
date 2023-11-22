@@ -13,6 +13,11 @@ export const Container = styled.div`
   background: ${theme.colors.white};
   border-radius: 20px;
   margin: 20px;
+
+  @media (max-width: 450px) {
+    width: 350px;
+    height: 500px;
+  }
 `
 
 export const CardHeader = styled.div`
