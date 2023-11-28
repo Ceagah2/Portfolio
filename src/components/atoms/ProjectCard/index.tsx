@@ -9,7 +9,7 @@ export const ProjectCard = (props: IProjectCard) => {
   return(
     <S.Container key={id}>
       <S.CardHeader>
-        <S.CardImage src={AVATAR_URL} />
+        <S.CardImage src={AVATAR_URL} alt="project cover"/>
         <S.CardTitle>{capitalizedTitle}</S.CardTitle>
       </S.CardHeader>
       <S.CardBody>

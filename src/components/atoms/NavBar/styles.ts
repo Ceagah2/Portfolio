@@ -80,4 +80,8 @@ export const MenuItem = styled.li`
 
 export const LinkItem = styled(Link)`
   text-decoration: none;
+  color: ${theme.colors.highLightPurple};
+  cursor: pointer;
+  position: relative;
+  font-size: ${theme.fontSizes.subHeading};
 `

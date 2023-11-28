@@ -9,7 +9,7 @@ export const JobExperience = () => {
           <S.JobTitle>{experience.title}</S.JobTitle>
           <S.JobDescription>{experience.description}</S.JobDescription>
           <S.DateContainer>
-            <S.DateText>Worked since: </S.DateText>
+            <S.DateText>Worked from: </S.DateText>
             <S.DateTime>{experience.dateRange}</S.DateTime>
           </S.DateContainer>
           <S.SkillContainer>

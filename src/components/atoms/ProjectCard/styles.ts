@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { theme } from '../../../styles/theme'
 
 export const Container = styled.div`
-  width: 250px;
-  height: 450px;
+  width: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;

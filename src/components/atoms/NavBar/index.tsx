@@ -8,16 +8,16 @@ export const NavBar = (props: any) => {
     <S.Container>
       <S.Menu>
         {code && 
-          <S.LinkItem to="/secret-chamber">
-            <S.MenuItem>{'< Secret Chamber />'}</S.MenuItem>
-          </S.LinkItem>
+          <S.MenuItem>
+            <S.LinkItem to="/secret-chamber">{'< Secret Chamber />'}</S.LinkItem>
+          </S.MenuItem>
         }
-        <S.LinkItem to="/">
-          <S.MenuItem>{'< Main />'}</S.MenuItem>
-          </S.LinkItem>
-        <S.LinkItem to="/jobs">
-          <S.MenuItem>{'< Job Experience />'}</S.MenuItem>
-        </S.LinkItem>
+        <S.MenuItem >
+          <S.LinkItem to="/">{'< Main />'}</S.LinkItem>
+          </S.MenuItem>
+        <S.MenuItem >
+          <S.LinkItem to="/jobs">{'< Job Experience />'}</S.LinkItem>
+        </S.MenuItem>
       </S.Menu>
     </S.Container>
   )

@@ -14,7 +14,7 @@ export const theme = {
     heading: '2.5rem',
     subHeading: '1.75rem',
     sectionTitle: '1.5rem',
-    body: '1rem',
+    body: '1.25rem',
     small: '0.75rem',
 
     mobileHeading: '1.75rem',

@@ -13,18 +13,24 @@ const getColor = (score: number): string => {
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-around;
+  width:  100%;
+  flex-wrap: wrap;
 `;
 export const JobContainer = styled.div`
   display: flex;
+  width: 30%;
+  height: 650px;
+  margin-bottom: 30px;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  text-align: center;
+  background: ${theme.colors.white};
+  padding: 20px;
+  border-radius: 20px;
 `;
 export const JobTitle = styled.h3`  
  color: ${theme.colors.highLightPurple};
@@ -32,16 +38,16 @@ export const JobTitle = styled.h3`
  font-family: ${theme.fonts.heading};
 `;
 export const JobDescription = styled.p`
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
   font-size: ${theme.fontSizes.body};
   font-family: ${theme.fonts.body};
-  text-align: right;
+  text-align: center;
 `;
 export const DateContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   margi-top: 10px;
 `;
@@ -54,13 +60,13 @@ export const DateText = styled.span`
 `;
 export const DateTime = styled.span`
    text-align: right;
-   color: ${theme.colors.white};
+   color: ${theme.colors.black};
    font-size: ${theme.fontSizes.body};
 `;
 export const SkillContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   width: 100%;
 `;
@@ -72,10 +78,9 @@ export const SkillWrapper = styled.div`
   width: 50%;
 `;
 export const SkillName = styled.span`
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
   font-size: ${theme.fontSizes.body};
   font-family: ${theme.fonts.body};
-
 `;
 
 export const ProgressBar = styled.div`

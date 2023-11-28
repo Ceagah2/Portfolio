@@ -2,7 +2,6 @@
 import { Container, MainContainer } from "../Home/styles"
 import { Header } from '../../components/organisms/Header'
 import { JobExperience } from "../../components/organisms/JobExperience"
-import { SectionContainer } from "../../components/atoms/SectionContainer"
 import * as S from './styles'
 const Jobs = () => {
   return(
@@ -19,9 +18,7 @@ const Jobs = () => {
             </S.HeaderText>
           </S.JobHeader>
           <S.JobContainer>
-             <SectionContainer title=' ' delay={1}>
               <JobExperience />
-            </SectionContainer>
           </S.JobContainer>
         </MainContainer>
     </Container>

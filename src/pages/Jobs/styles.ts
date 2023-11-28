@@ -7,6 +7,7 @@ export const JobHeader = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 `
 export const HeaderTitle = styled.h1`
   color: ${theme.colors.highLightPurple};

@@ -24,7 +24,9 @@ export const JobExperiences: IJobExperiences[] = [
     id: 1,
     title: 'Front-end Developer @ Oceaning Marketing and Training',
     description: `
-      Develop the online menu application called KiosksFoods. This app was made with React Native, Expo and Node.js.
+      Develop the online menu application called KiosksFoods. This app was made with React Native, Expo and Node.js, integrated with 
+      GetNet gateway API. The user scan the QR code in the table, make the order and pay for it, without call the waiter. KiosksFoods
+      was developed in the peak of the pandemic.s
       Develop the personal coaching web application called 'Metodo You'. This app was made with React and Node.js.
     `,
     skills: [
@@ -39,7 +41,10 @@ export const JobExperiences: IJobExperiences[] = [
   {
     id: 2,
     title: 'Mobile Developer @ WT2 Blockchain and software',
-    description: `Develop the mobile application called 'Smart Houses'. This app was made with React Native, Expo and PHP.`,
+    description: `Develop the mobile application called 'Smart Houses'. This app was made with React Native, Expo and PHP.
+     Smart homes have come to make the client's life easier. When the client hires the construction company to build their home,
+     they don't need to go to the site to monitor the progress of the work, as they have all of this in the palm of their hand,
+     with weekly updates. `,
     skills: [
       { name: 'Javascript', score: 3 },
       { name: 'CSS', score: 5 },
@@ -51,7 +56,9 @@ export const JobExperiences: IJobExperiences[] = [
   {
     id: 3,
     title: 'Mobile Developer @ LKS Health and Wellness technologies',
-    description: `Develop new features to the mobile application called 'Posto7'. This app was made with React Native and Google Firebase`,
+    description: `Develop new features to the mobile application called 'Posto7'. This app was made with React Native and Google Firebase.
+    Posto7 is here to show the world that dieting isn't boring at all. 
+    Through proposed challenges, fun menus, and 24/7 chat support, users discover that dieting can be a fun and healthy experience.`,
     skills: [
       { name: 'Javascript', score: 3 },
       { name: 'CSS', score: 5 },
@@ -96,12 +103,10 @@ export const JobExperiences: IJobExperiences[] = [
     description: `Develop new applications to third party companies. These applications are 50/50 web and mobile. The web applications can be developed with React, Next.js or Vue.js. The mobile app can be developed in React native with or without Expo Framework, added with Typescript.`,
     skills: [
       { name: 'Javascript', score: 4 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
       { name: 'React', score: 4 },
       { name: 'React Native', score: 4 },
       { name: 'Next Js', score: 4 },
-      { name: 'TypeScript', score: 3 },
+      { name: 'TypeScript', score: 4 },
       { name: 'MongoDB', score: 2 },
       { name: 'Wordpress', score: 2 },
     ],

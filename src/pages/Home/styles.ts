@@ -29,4 +29,51 @@ export const SectionText = styled.p`
   letter-spacing: 1.1px;
   line-height: 1.5;
 `
+export const JobContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+`;
+export const JobDescription = styled.p`
+  color: ${theme.colors.white};
+  font-size: ${theme.fontSizes.body};
+  font-family: ${theme.fonts.body};
+  text-align: right;
+`;
 
+export const SkillContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+`;
+export const SkillName = styled.span`
+  color: ${theme.colors.white};
+  font-size: ${theme.fontSizes.body};
+  font-family: ${theme.fonts.body};
+`;
+
+export const DateContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margi-top: 10px;
+`;
+export const DateText = styled.span`
+  text-align: right;
+  color: ${theme.colors.highlight};
+  font-size: ${theme.fontSizes.body};
+  font-family: ${theme.fonts.heading};
+  margin-right: 5px;
+`;
+export const DateTime = styled.span`
+   text-align: right;
+   color: ${theme.colors.white};
+   font-size: ${theme.fontSizes.body};
+`;

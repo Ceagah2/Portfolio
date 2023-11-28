@@ -34,17 +34,17 @@ const Home = () => {
           </S.SectionText>
         </SectionContainer>
         <SectionContainer title="Job Experience" delay={1} orientation="end">
-          <J.JobContainer>
+          <S.JobContainer>
             <J.JobTitle>{lastExperience.title}</J.JobTitle>
-            <J.JobDescription>{lastExperience.description}</J.JobDescription>
-            <J.DateContainer>
-              <J.DateText>Worked since: </J.DateText>
-              <J.DateTime>{lastExperience.dateRange}</J.DateTime>
-            </J.DateContainer>
-            <J.SkillContainer>
+            <S.JobDescription>{lastExperience.description}</S.JobDescription>
+            <S.DateContainer>
+              <S.DateText>Worked since: </S.DateText>
+              <S.DateTime>{lastExperience.dateRange}</S.DateTime>
+            </S.DateContainer>
+            <S.SkillContainer>
               {lastExperience.skills.map((skill, index) => (
                 <div key={index}>
-                  <J.SkillName>{Object.values(skill)[0]}</J.SkillName>
+                  <S.SkillName>{Object.values(skill)[0]}</S.SkillName>
                   <J.ProgressBar>
                     {[...Array(5)].map((_, scoreIndex) => (
                       <J.SkillSquare
@@ -56,11 +56,11 @@ const Home = () => {
                 </div>
               ))}
               <J.LinkContainer>
-                <J.JobDescription>See all my experiences</J.JobDescription>
+                <S.JobDescription>See all my experiences</S.JobDescription>
                 <J.JobLink to={"/jobs"}>&nbsp; Here ! <FaChevronRight size={12}/></J.JobLink>
               </J.LinkContainer>
-            </J.SkillContainer>
-          </J.JobContainer>
+            </S.SkillContainer>
+          </S.JobContainer>
         </SectionContainer>
         <SectionContainer title="My Projects" delay={1.5} orientation="start">
           <MyProjects />
