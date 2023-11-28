@@ -77,6 +77,14 @@ export const MenuItem = styled.li`
     font-size: ${theme.fontSizes.mobileSubHeading};
   }
 `
+export const NoAnimationMenuItem = styled.li`
+  list-style: none;
+  color: ${theme.colors.highLightPurple};
+  cursor: pointer;
+  position: relative;
+  font-size: ${theme.fontSizes.subHeading};
+`
+
 
 export const LinkItem = styled(Link)`
   text-decoration: none;

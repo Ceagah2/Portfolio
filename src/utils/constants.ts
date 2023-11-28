@@ -9,7 +9,7 @@ export const messages = [
   'Think retro! What gaming code could reveal a hidden surprise?'
 ];
 
-export const BioText = `
+export const BioTextEng = `
   My name is Carlos Henrique, and I am originally from Taubaté, a small city in the interior of the State of São Paulo. 
   In my free time, I'm a gamer and amateur speedrunner of Resident Evil 3.
   I've been working as a front-end developer since 2020. I decided to leave college, where I was studying Systems Analysis and Development, 
@@ -19,7 +19,21 @@ export const BioText = `
   I was on the verge of leaving everything at the time and enrolling in a gastronomy college. 
   It took very little for me not to be here now, sharing my portfolio with you.
 `
-export const JobExperiences: IJobExperiences[] = [
+
+export const BioTextPt = `
+ Meu nome é Carlos Henrique, e sou natural de Taubaté, uma pequena cidade no interior do estado de São Paulo.
+No meu tempo livre, sou um jogador e speedrunner amador do Resident Evil 3.
+Trabalho como desenvolvedor front-end desde 2020. Decidi sair da faculdade, onde cursava Análise e Desenvolvimento de Sistemas, no último período de 2020. Essa decisão foi influenciada pela minha entrada no mercado de trabalho, e optei por focar na minha carreira profissional.
+Antes de me tornar um desenvolvedor, trabalhei no comércio e também como servidor público.
+Cheguei perto de me tornar um chef profissional porque tenho uma grande paixão por essa área.
+Estive prestes a largar tudo na época e me matricular em uma faculdade de gastronomia.
+Foi muito pouco para eu não estar aqui agora, compartilhando meu portfólio com você.
+`
+
+export const HeaderTextEng = `I'm specialized in creating digital experiences with precision and passion, where the blend of innovation and imagination flourishes.`
+export const HeaderTextPt = `Sou especializado em criar experiências digitais com precisão e paixão, onde a mistura de inovação e imaginação floresce.`
+
+export const JobExperiencesEng: IJobExperiences[] = [
   {
     id: 1,
     title: 'Front-end Developer @ Oceaning Marketing and Training',
@@ -113,6 +127,100 @@ export const JobExperiences: IJobExperiences[] = [
     dateRange: '12/2022 to Present days'
   },
 ];
+
+
+export const JobExperiencesPT: IJobExperiences[] = [
+  {
+    id: 1,
+    title: 'Desenvolvedor Front-end @ Oceaning Marketing e Treinamentos',
+    description: `
+      Desenvolvi o aplicativo de cardápio online chamado KiosksFoods. Este app foi feito com React Native, Expo e Node.js, integrado com a API do gateway GetNet. O usuário escaneia o QR code na mesa, faz o pedido e paga por ele, sem chamar o garçom. O KiosksFoods foi desenvolvido no auge da pandemia.
+      Desenvolvi o aplicativo web de coaching pessoal chamado 'Método You'. Este app foi feito com React e Node.js.
+    `,
+    skills: [
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 2 },
+      { name: 'React Native', score: 2 },
+    ],
+    dateRange: '09/2020 a 03/2021'
+  },
+  {
+    id: 2,
+    title: 'Desenvolvedor Mobile @ WT2 Blockchain and Software',
+    description: `Desenvolvi o aplicativo mobile chamado 'Smart Houses'. Este app foi feito com React Native, Expo e PHP.
+     As casas inteligentes vieram para facilitar a vida do cliente. Quando o cliente contrata a empreiteira para construir a sua casa,
+     ele não precisa ir até o local para acompanhar o andamento da obra, pois ele tem tudo isso na palma da sua mão, com atualizações semanais.`,
+    skills: [
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React Native', score: 3 },
+    ],
+    dateRange: '03/2021 a 04/2021'
+  },
+  {
+    id: 3,
+    title: 'Desenvolvedor Mobile @ LKS Health and Wellness Technologies',
+    description: `Desenvolvi novas funcionalidades para o aplicativo mobile 'Posto7'. Este app foi feito com React Native e Google Firebase.
+    O Posto7 veio para mostrar ao mundo que fazer dieta não é nada chato.
+    Através de desafios propostos, cardápios divertidos e suporte de chat 24/7, os usuários descobrem que fazer dieta pode ser uma experiência divertida e saudável.`,
+    skills: [
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React Native', score: 3 },
+      { name: 'TypeScript', score: 3 },
+      { name: 'Firebase', score: 2 },
+    ],
+    dateRange: '04/2021 a 11/2021'
+  },
+  {
+    id: 4,
+    title: 'Desenvolvedor Front-end @ Tecla T Software Solutions',
+    description: `Desenvolvi novas funcionalidades para empresas terceiras. Estas são principalmente aplicações web, desenvolvidas com React + Typescript.`,
+    skills: [
+      { name: 'Javascript', score: 3 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 3 },
+      { name: 'TypeScript', score: 3 },
+    ],
+    dateRange: '12/2021 a 04/2022'
+  },
+  {
+    id: 5,
+    title: 'Engenheiro de Software @ Evolved Technologies',
+    description: `Desenvolvi novas funcionalidades para o aplicativo mobile e web 'Showingly'. Este aplicativo foi desenvolvido com React, React Native, Typescript e MongoDB com MongoRealm.`,
+    skills: [
+      { name: 'Javascript', score: 4 },
+      { name: 'CSS', score: 5 },
+      { name: 'HTML', score: 5 },
+      { name: 'React', score: 4 },
+      { name: 'React Native', score: 4 },
+      { name: 'TypeScript', score: 3 },
+      { name: 'MongoDB', score: 2 },
+    ],
+    dateRange: '04/2022 a 11/2022'
+  },
+  {
+    id: 6,
+    title: 'Desenvolvedor Front-end @ Hero 99',
+    description: `Desenvolvo novas aplicações para empresas terceirizadas. Essas aplicações são 50% para web e 50% para dispositivos móveis. As aplicações web podem ser desenvolvidas com React, Next.js ou Vue.js. O aplicativo móvel pode ser desenvolvido em React Native, com ou sem o Framework Expo, e com o uso de Typescript.`,
+    skills: [
+      { name: 'Javascript', score: 4 },
+      { name: 'React', score: 4 },
+      { name: 'React Native', score: 4 },
+      { name: 'Next Js', score: 4 },
+      { name: 'TypeScript', score: 4 },
+      { name: 'MongoDB', score: 2 },
+      { name: 'Wordpress', score: 2 },
+    ],
+    dateRange: '12/2022 até o momento'
+  },
+]
+
 
 export const USER_NAME = 'Ceagah2'
 export const AVATAR_URL = 'https://avatars.githubusercontent.com/u/133968337?s=400&u=ce1be67a31e9bc490c9d532419554ab9508d8537&v=4'

@@ -1,7 +1,4 @@
-interface IKonami {
-  setSecretCode : (code: boolean) => void
-  startAnimation: () => void
-}
+import {IKonami} from '../@types/types'
 
 export const KonamiCode = ({ setSecretCode, startAnimation }: IKonami) => {
   let index = 0;

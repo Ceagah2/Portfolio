@@ -4,13 +4,16 @@ import * as S from './styles'
 import {useState, useEffect} from 'react'
 import { NavBar } from '../../atoms/NavBar'
 import { Avatar } from '../../atoms/Avatar'
+import { languageAtom } from '../../../store'
 import { secretCodeAtom } from '../../../store'
 import { KonamiCode } from '../../../utils/konami'
 import AudioSource  from '../../../assets/item.wav'
 import { AudioComponent } from '../../../components/atoms/AudioPlay'
 import { AnimatedImage } from '../../../components/atoms/AnimationImage'
+import { HeaderTextPt, HeaderTextEng } from '../../../utils/constants'
 
 export const Header = () => {
+  const [language] = useAtom(languageAtom);
   const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
   const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false)
 
@@ -40,8 +43,10 @@ export const Header = () => {
         <Avatar />
         <S.TextBox>
           <S.AvatarImage src={avatarUrl} alt="Carlos Profile Picture"/>
-          <S.Title>Hello, I'm <S.TitleSpan>Carlos Ceagah</S.TitleSpan>.</S.Title>
-          <S.TitleDetails>I specialize in crafting digital experiences with precision and passion, where the synergy of innovation and imagination unfolds</S.TitleDetails>
+          <S.Title>{language === 'pt-br' ? 'Olá, eu sou' : `Hello, I'm`} <S.TitleSpan>Carlos Ceagah</S.TitleSpan>.</S.Title>
+          <S.TitleDetails>
+            {language === 'pt-br' ? HeaderTextPt : HeaderTextEng}
+          </S.TitleDetails>
         </S.TextBox>
       </S.TitleRow>
       <S.MenuRow>

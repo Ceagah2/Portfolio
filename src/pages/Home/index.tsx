@@ -1,21 +1,24 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { useAtom } from "jotai";
 import { useEffect } from "react"
+import { languageAtom } from "../../store";
 import { FaChevronRight } from "react-icons/fa";
 import { Header } from "../../components/organisms/Header"
 import { MyProjects } from "../../components/organisms/MyProjects"
-import {messages, BioText, JobExperiences} from '../../utils/constants'
+import * as J from "../../components/organisms/JobExperience/styles"
+import {messages, BioTextEng,BioTextPt, JobExperiencesEng, JobExperiencesPT} from '../../utils/constants'
 import { SectionContainer } from "../../components/atoms/SectionContainer"
 import * as S from "./styles"
-import * as J from "../../components/organisms/JobExperience/styles"
 
 const Home = () => {
+  const [language] = useAtom(languageAtom);
   function showRandomMessage() {
     const randomIndex = Math.floor(Math.random() * messages.length);
     const randomMessage = messages[randomIndex];
 
     console.log('🎮 Gaming Easter Egg: ', randomMessage);
   }
-  const lastExperience = JobExperiences[JobExperiences.length - 1];
+  const lastExperience = language === "en-us" ? JobExperiencesEng[JobExperiencesEng.length - 1] : JobExperiencesPT[JobExperiencesPT.length - 1];
 
   
   useEffect(() => {
@@ -26,19 +29,20 @@ const Home = () => {
   return(
     <S.Container>
       <Header />
-      
       <S.MainContainer>
         <SectionContainer title="Bio" delay={0.5} orientation="start">
           <S.SectionText>
-            {BioText}
+            {language === "en-us" ? BioTextEng : BioTextPt}
           </S.SectionText>
         </SectionContainer>
-        <SectionContainer title="Job Experience" delay={1} orientation="end">
+        <SectionContainer title={language === "en-us" ? "Job Experience" : "Experiencias"} delay={1} orientation="end">
           <S.JobContainer>
             <J.JobTitle>{lastExperience.title}</J.JobTitle>
             <S.JobDescription>{lastExperience.description}</S.JobDescription>
             <S.DateContainer>
-              <S.DateText>Worked since: </S.DateText>
+              <S.DateText>
+                {language === "en-us" ? "Worked from: " : "Trabalhei de: "}  
+              </S.DateText>
               <S.DateTime>{lastExperience.dateRange}</S.DateTime>
             </S.DateContainer>
             <S.SkillContainer>
@@ -56,13 +60,18 @@ const Home = () => {
                 </div>
               ))}
               <J.LinkContainer>
-                <S.JobDescription>See all my experiences</S.JobDescription>
-                <J.JobLink to={"/jobs"}>&nbsp; Here ! <FaChevronRight size={12}/></J.JobLink>
+                <S.JobDescription>
+                  {language === "en-us" ? "See all my experiences" : "Veja todas as experiências"}
+                </S.JobDescription>
+                <J.JobLink to={"/jobs"}>&nbsp; 
+                 {language === "en-us" ? "here!" : "aqui!"}
+                 <FaChevronRight size={12}/>
+                </J.JobLink>
               </J.LinkContainer>
             </S.SkillContainer>
           </S.JobContainer>
         </SectionContainer>
-        <SectionContainer title="My Projects" delay={1.5} orientation="start">
+        <SectionContainer title={language === "en-us" ? "My Projects" : "Meus Projetos"} delay={1.5} orientation="start">
           <MyProjects />
         </SectionContainer>
       </S.MainContainer>

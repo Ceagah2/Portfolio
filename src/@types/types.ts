@@ -22,3 +22,8 @@ export interface IProjectCard{
   description: string
   html_url: string
 }
+
+export interface IKonami {
+  setSecretCode: (code: boolean) => void
+  startAnimation: () => void
+}
