@@ -13,7 +13,7 @@ export const MyProjects = () => {
   
   useEffect(() => {
     const fetchProjects = () => {
-      const desiredRepos = ['Portfolio', 'wise-task', 'vv-view',];
+      const desiredRepos = ['Portfolio', 'wise-task', 'vv-view'];
 
       fetch(`https://api.github.com/users/${USER_NAME}/repos`)
         .then(response => {
@@ -54,9 +54,11 @@ export const MyProjects = () => {
             `Abaixo você encontrará os meus projetos mais relevantes, criados para fins pessoais. Nesta seção, você não encontrará projetos nos quais trabalhei, mas sim os projetos que desenvolvi para lançar e hospedar em lojas.`}
         </S.ProjectText>
       </S.ProjectsHeader>
-      {projects && projects.map((project) => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
+      <S.ProjectsContainer>
+        {projects && projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </S.ProjectsContainer>
     </S.Container>
   )
 }
