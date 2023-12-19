@@ -9,9 +9,12 @@ export const MyProjects = () => {
   const [projects, setProjects] = useState<IProjectCard[]>()
   const [language] = useAtom(languageAtom)
 
+
   
   useEffect(() => {
     const fetchProjects = () => {
+      const desiredRepos = ['Portfolio', 'wise-task', 'vv-view',];
+
       fetch(`https://api.github.com/users/${USER_NAME}/repos`)
         .then(response => {
           if (!response.ok) {
@@ -20,11 +23,9 @@ export const MyProjects = () => {
           return response.json();
         })
         .then(data => {
-          const filteredRepos = data.filter((repo: any) => {
-            return repo.name === 'Portfolio' || repo.name === 'wise-task';
-          });
+          const filteredRepos = data.filter(repo => desiredRepos.includes(repo.name));
 
-          const formattedData: IProjectCard[] = filteredRepos.map((repo: any) => ({
+          const formattedData = filteredRepos.map(repo => ({
             id: repo.id,
             title: repo.name,
             description: repo.description || '',
@@ -40,7 +41,8 @@ export const MyProjects = () => {
           console.error('Erro:', error);
         });
     };
-    fetchProjects()
+
+    fetchProjects();
   },[])
 
   return(
