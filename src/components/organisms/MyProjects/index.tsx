@@ -23,9 +23,9 @@ export const MyProjects = () => {
           return response.json();
         })
         .then(data => {
-          const filteredRepos = data.filter(repo => desiredRepos.includes(repo.name));
+          const filteredRepos = data.filter((repo: { name: string }) => desiredRepos.includes(repo.name));
 
-          const formattedData = filteredRepos.map(repo => ({
+          const formattedData = filteredRepos.map((repo: { id: string; name: string; description: string; owner: { avatar_url: string }; html_url: string }) => ({
             id: repo.id,
             title: repo.name,
             description: repo.description || '',
