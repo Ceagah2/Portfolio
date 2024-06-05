@@ -36,7 +36,7 @@ export const HeaderTextPt = `Sou especializado em criar experiências digitais c
 export const JobExperiencesEng: IJobExperiences[] = [
   {
     id: 1,
-    title: 'Front-end Developer @ Oceaning Marketing and Training',
+    title: "Front-end Developer @ Oceaning Marketing and Training",
     description: `
       Develop the online menu application called KiosksFoods. This app was made with React Native, Expo and Node.js, integrated with 
       GetNet gateway API. The user scan the QR code in the table, make the order and pay for it, without call the waiter. KiosksFoods
@@ -44,87 +44,98 @@ export const JobExperiencesEng: IJobExperiences[] = [
       Develop the personal coaching web application called 'Metodo You'. This app was made with React and Node.js.
     `,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 2 },
-      { name: 'React Native', score: 2 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 2 },
+      { name: "React Native", score: 2 },
     ],
-    dateRange: '09/2020 to 03/2021'
+    dateRange: "09/2020 to 03/2021",
   },
   {
     id: 2,
-    title: 'Mobile Developer @ WT2 Blockchain and software',
+    title: "Mobile Developer @ WT2 Blockchain and software",
     description: `Develop the mobile application called 'Smart Houses'. This app was made with React Native, Expo and PHP.
      Smart homes have come to make the client's life easier. When the client hires the construction company to build their home,
      they don't need to go to the site to monitor the progress of the work, as they have all of this in the palm of their hand,
      with weekly updates. `,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React Native', score: 3 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React Native", score: 3 },
     ],
-    dateRange: '03/2021 to 04/2021'
+    dateRange: "03/2021 to 04/2021",
   },
   {
     id: 3,
-    title: 'Mobile Developer @ LKS Health and Wellness technologies',
+    title: "Mobile Developer @ LKS Health and Wellness technologies",
     description: `Develop new features to the mobile application called 'Posto7'. This app was made with React Native and Google Firebase.
     Posto7 is here to show the world that dieting isn't boring at all. 
     Through proposed challenges, fun menus, and 24/7 chat support, users discover that dieting can be a fun and healthy experience.`,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React Native', score: 3 },
-      { name: 'TypeScript', score: 3 },
-      {name: 'Firebase', score: 2},
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React Native", score: 3 },
+      { name: "TypeScript", score: 3 },
+      { name: "Firebase", score: 2 },
     ],
-    dateRange: '04/2021 to 11/2021'
+    dateRange: "04/2021 to 11/2021",
   },
   {
     id: 4,
-    title: 'Front-end Developer @ Tecla T software solutions',
+    title: "Front-end Developer @ Tecla T software solutions",
     description: `Develop new features to third party companies. This are mostly web applications, developed with React + Typescript`,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 3 },
-      { name: 'TypeScript', score: 3 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 3 },
+      { name: "TypeScript", score: 3 },
     ],
-    dateRange: '12/2021 to 04/2022'
+    dateRange: "12/2021 to 04/2022",
   },
   {
     id: 5,
-    title: 'Software Engineer @ Evolved Technologies',
+    title: "Software Engineer @ Evolved Technologies",
     description: `Develop new features to the mobile and web application 'Showingly'. This application was developed with React, React native, Typescript and MongoDb with MongoRealm.`,
     skills: [
-      { name: 'Javascript', score: 4 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 4 },
-      { name: 'React Native', score: 4 },
-      { name: 'TypeScript', score: 3 },
-      { name: 'MongoDB', score: 2 },
+      { name: "Javascript", score: 4 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 4 },
+      { name: "React Native", score: 4 },
+      { name: "TypeScript", score: 3 },
+      { name: "MongoDB", score: 2 },
     ],
-    dateRange: '04/2022 to 11/2022'
+    dateRange: "04/2022 to 11/2022",
   },
   {
     id: 6,
-    title: 'Front end developer @ Hero 99',
+    title: "Front end developer @ Hero 99",
     description: `Develop new applications to third party companies. These applications are 50/50 web and mobile. The web applications can be developed with React, Next.js or Vue.js. The mobile app can be developed in React native with or without Expo Framework, added with Typescript.`,
     skills: [
-      { name: 'Javascript', score: 4 },
-      { name: 'React', score: 4 },
-      { name: 'React Native', score: 4 },
-      { name: 'Next Js', score: 4 },
-      { name: 'TypeScript', score: 4 },
-      { name: 'MongoDB', score: 2 },
-      { name: 'Wordpress', score: 2 },
+      { name: "Javascript", score: 4 },
+      { name: "React", score: 4 },
+      { name: "React Native", score: 4 },
+      { name: "Next Js", score: 4 },
+      { name: "TypeScript", score: 4 },
+      { name: "MongoDB", score: 2 },
+      { name: "Wordpress", score: 2 },
     ],
-    dateRange: '12/2022 to Present days'
+    dateRange: "12/2022 to 03/2024",
+  },
+  {
+    id: 7,
+    title: "Mobile developer @ WePedal",
+    description: `Develop the WePedal app using React Native, TypeScript, and the Expo framework. The app aims to unite cyclists into groups to organize events and share experiences.`,
+    skills: [
+      { name: "Javascript", score: 5 },
+      { name: "React Native", score: 5 },
+      { name: "TypeScript", score: 5 },
+    ],
+    dateRange: "04/2024 to Present Days",
   },
 ];
 
@@ -132,94 +143,105 @@ export const JobExperiencesEng: IJobExperiences[] = [
 export const JobExperiencesPT: IJobExperiences[] = [
   {
     id: 1,
-    title: 'Desenvolvedor Front-end @ Oceaning Marketing e Treinamentos',
+    title: "Desenvolvedor Front-end @ Oceaning Marketing e Treinamentos",
     description: `
       Desenvolvi o aplicativo de cardápio online chamado KiosksFoods. Este app foi feito com React Native, Expo e Node.js, integrado com a API do gateway GetNet. O usuário escaneia o QR code na mesa, faz o pedido e paga por ele, sem chamar o garçom. O KiosksFoods foi desenvolvido no auge da pandemia.
       Desenvolvi o aplicativo web de coaching pessoal chamado 'Método You'. Este app foi feito com React e Node.js.
     `,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 2 },
-      { name: 'React Native', score: 2 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 2 },
+      { name: "React Native", score: 2 },
     ],
-    dateRange: '09/2020 a 03/2021'
+    dateRange: "09/2020 a 03/2021",
   },
   {
     id: 2,
-    title: 'Desenvolvedor Mobile @ WT2 Blockchain and Software',
+    title: "Desenvolvedor Mobile @ WT2 Blockchain and Software",
     description: `Desenvolvi o aplicativo mobile chamado 'Smart Houses'. Este app foi feito com React Native, Expo e PHP.
      As casas inteligentes vieram para facilitar a vida do cliente. Quando o cliente contrata a empreiteira para construir a sua casa,
      ele não precisa ir até o local para acompanhar o andamento da obra, pois ele tem tudo isso na palma da sua mão, com atualizações semanais.`,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React Native', score: 3 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React Native", score: 3 },
     ],
-    dateRange: '03/2021 a 04/2021'
+    dateRange: "03/2021 a 04/2021",
   },
   {
     id: 3,
-    title: 'Desenvolvedor Mobile @ LKS Health and Wellness Technologies',
+    title: "Desenvolvedor Mobile @ LKS Health and Wellness Technologies",
     description: `Desenvolvi novas funcionalidades para o aplicativo mobile 'Posto7'. Este app foi feito com React Native e Google Firebase.
     O Posto7 veio para mostrar ao mundo que fazer dieta não é nada chato.
     Através de desafios propostos, cardápios divertidos e suporte de chat 24/7, os usuários descobrem que fazer dieta pode ser uma experiência divertida e saudável.`,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React Native', score: 3 },
-      { name: 'TypeScript', score: 3 },
-      { name: 'Firebase', score: 2 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React Native", score: 3 },
+      { name: "TypeScript", score: 3 },
+      { name: "Firebase", score: 2 },
     ],
-    dateRange: '04/2021 a 11/2021'
+    dateRange: "04/2021 a 11/2021",
   },
   {
     id: 4,
-    title: 'Desenvolvedor Front-end @ Tecla T Software Solutions',
+    title: "Desenvolvedor Front-end @ Tecla T Software Solutions",
     description: `Desenvolvi novas funcionalidades para empresas terceiras. Estas são principalmente aplicações web, desenvolvidas com React + Typescript.`,
     skills: [
-      { name: 'Javascript', score: 3 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 3 },
-      { name: 'TypeScript', score: 3 },
+      { name: "Javascript", score: 3 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 3 },
+      { name: "TypeScript", score: 3 },
     ],
-    dateRange: '12/2021 a 04/2022'
+    dateRange: "12/2021 a 04/2022",
   },
   {
     id: 5,
-    title: 'Engenheiro de Software @ Evolved Technologies',
+    title: "Engenheiro de Software @ Evolved Technologies",
     description: `Desenvolvi novas funcionalidades para o aplicativo mobile e web 'Showingly'. Este aplicativo foi desenvolvido com React, React Native, Typescript e MongoDB com MongoRealm.`,
     skills: [
-      { name: 'Javascript', score: 4 },
-      { name: 'CSS', score: 5 },
-      { name: 'HTML', score: 5 },
-      { name: 'React', score: 4 },
-      { name: 'React Native', score: 4 },
-      { name: 'TypeScript', score: 3 },
-      { name: 'MongoDB', score: 2 },
+      { name: "Javascript", score: 4 },
+      { name: "CSS", score: 5 },
+      { name: "HTML", score: 5 },
+      { name: "React", score: 4 },
+      { name: "React Native", score: 4 },
+      { name: "TypeScript", score: 3 },
+      { name: "MongoDB", score: 2 },
     ],
-    dateRange: '04/2022 a 11/2022'
+    dateRange: "04/2022 a 11/2022",
   },
   {
     id: 6,
-    title: 'Desenvolvedor Front-end @ Hero 99',
+    title: "Desenvolvedor Front-end @ Hero 99",
     description: `Desenvolvo novas aplicações para empresas terceirizadas. Essas aplicações são 50% para web e 50% para dispositivos móveis. As aplicações web podem ser desenvolvidas com React, Next.js ou Vue.js. O aplicativo móvel pode ser desenvolvido em React Native, com ou sem o Framework Expo, e com o uso de Typescript.`,
     skills: [
-      { name: 'Javascript', score: 4 },
-      { name: 'React', score: 4 },
-      { name: 'React Native', score: 4 },
-      { name: 'Next Js', score: 4 },
-      { name: 'TypeScript', score: 4 },
-      { name: 'MongoDB', score: 2 },
-      { name: 'Wordpress', score: 2 },
+      { name: "Javascript", score: 4 },
+      { name: "React", score: 4 },
+      { name: "React Native", score: 4 },
+      { name: "Next Js", score: 4 },
+      { name: "TypeScript", score: 4 },
+      { name: "MongoDB", score: 2 },
+      { name: "Wordpress", score: 2 },
     ],
-    dateRange: '12/2022 até o momento'
+    dateRange: "12/2022 a 03/2024",
   },
-]
+  {
+    id: 7,
+    title: "Desenvolvedor Mobile @ WePedal",
+    description: `Desenvolver o aplicativo WePedal, utilizando React Native + Typescript + Expo framework. O Aplicativo tem a finalidade de unir ciclistas em grupos para organizar eventos e compartilharem momentos.`,
+   skills: [
+      { name: "Javascript", score: 5 },
+      { name: "React Native", score: 5 },
+      { name: "TypeScript", score: 5 },
+   ],
+    dateRange: "04/2024 até o momento",
+  },
+];
 
 
 export const USER_NAME = 'Ceagah2'

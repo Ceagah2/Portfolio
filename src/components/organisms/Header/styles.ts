@@ -66,6 +66,7 @@ export const AvatarImage = styled.img`
   backdrop-filter: blur(5px);
   display: none;
   margin-bottom: 20px;
+  cursor: pointer;
 
   @media (max-width: 430px) {
     display: block;

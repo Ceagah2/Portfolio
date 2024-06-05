@@ -11,12 +11,15 @@ import AudioSource  from '../../../assets/item.wav'
 import { AudioComponent } from '../../../components/atoms/AudioPlay'
 import { AnimatedImage } from '../../../components/atoms/AnimationImage'
 import { HeaderTextPt, HeaderTextEng } from '../../../utils/constants'
+import { useNavigate } from 'react-router-dom'
 
 export const Header = () => {
   const [language] = useAtom(languageAtom);
   const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
   const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false)
+  const avatarUrl = `https://avatars.githubusercontent.com/u/40706788?v=4`;
 
+  const navigation = useNavigate();
   const animationTime = () => {
     setIsAnimationActive(true)
     setTimeout(() => {
@@ -31,7 +34,7 @@ export const Header = () => {
   useEffect(() => {
     KonamiCode({ setSecretCode, startAnimation })
   }, [])
-  const avatarUrl = `https://avatars.githubusercontent.com/u/40706788?v=4`
+  
   return (
     <S.Container>
       {isAnimationActive &&
@@ -42,7 +45,7 @@ export const Header = () => {
       <S.TitleRow>
         <Avatar />
         <S.TextBox>
-          <S.AvatarImage src={avatarUrl} alt="Carlos Profile Picture"/>
+          <S.AvatarImage src={avatarUrl} onClick={() => navigation('/')} alt="Carlos Profile Picture"/>
           <S.Title>{language === 'pt-br' ? 'Olá, eu sou' : `Hello, I'm`} <S.TitleSpan>Carlos Ceagah</S.TitleSpan>.</S.Title>
           <S.TitleDetails>
             {language === 'pt-br' ? HeaderTextPt : HeaderTextEng}
