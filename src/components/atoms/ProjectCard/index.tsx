@@ -1,6 +1,6 @@
+import { FaArrowRight } from "react-icons/fa"
 import { IProjectCard } from "../../../@types/types"
 import { AVATAR_URL } from "../../../utils/constants"
-import { FaArrowRight } from "react-icons/fa"
 import * as S from "./styles"
 
 export const ProjectCard = (props: IProjectCard) => {

@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useAtom } from "jotai";
-import { useEffect } from "react"
-import { languageAtom } from "../../store";
+import { useEffect } from "react";
 import { FaChevronRight } from "react-icons/fa";
-import { Header } from "../../components/organisms/Header"
-import { MyProjects } from "../../components/organisms/MyProjects"
-import * as J from "../../components/organisms/JobExperience/styles"
-import {messages, BioTextEng,BioTextPt, JobExperiencesEng, JobExperiencesPT} from '../../utils/constants'
-import { SectionContainer } from "../../components/atoms/SectionContainer"
-import * as S from "./styles"
+import { SectionContainer } from "../../components/atoms/SectionContainer";
+import { Header } from "../../components/organisms/Header";
+import * as J from "../../components/organisms/JobExperience/styles";
+import { MyProjects } from "../../components/organisms/MyProjects";
+import { languageAtom } from "../../store";
+import { BioTextEng, BioTextPt, JobExperiencesEng, JobExperiencesPT, messages } from '../../utils/constants';
+import * as S from "./styles";
 
 const Home = () => {
   const [language] = useAtom(languageAtom);
@@ -60,6 +60,7 @@ const Home = () => {
                 </div>
               ))}
               <J.LinkContainer>
+                <div style={{ display: "flex", alignItems: "center",  }}>
                 <S.JobDescription>
                   {language === "en-us" ? "See all my experiences" : "Veja todas as experiências"}
                 </S.JobDescription>
@@ -67,6 +68,7 @@ const Home = () => {
                  {language === "en-us" ? "here!" : "aqui!"}
                  <FaChevronRight size={12}/>
                 </J.JobLink>
+                </div>
               </J.LinkContainer>
             </S.SkillContainer>
           </S.JobContainer>

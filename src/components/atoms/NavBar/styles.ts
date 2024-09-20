@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components'; 
-import { theme } from '../../../styles/theme'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
+import { theme } from "../../../styles/theme";
 
 const barrelRoll = keyframes`
   0% {
@@ -17,7 +17,6 @@ const barrelRoll = keyframes`
   }
 `;
 
-
 export const Container = styled.nav`
   display: flex;
   justify-content: space-around;
@@ -26,17 +25,18 @@ export const Container = styled.nav`
   padding: 10px;
 
   @media (max-width: 750px) {
-    width: 100%;
+    flex-direction: row; 
+    padding: 5px;
   }
 
   @media (max-width: 1500px) {
     width: 60%;
   }
-  
+
   @media (max-width: 1100px) {
     width: 100%;
   }
-`
+`;
 
 export const Menu = styled.ul`
   display: flex;
@@ -44,10 +44,13 @@ export const Menu = styled.ul`
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-   @media (max-width: 750px) {
-    margin-top: 20px;
+
+  @media (max-width: 750px) {
+    flex-direction: column; 
+    margin-top: 10px;
+    width: 100%; 
   }
-`
+`;
 
 export const MenuItem = styled.li`
   list-style: none;
@@ -56,35 +59,39 @@ export const MenuItem = styled.li`
   position: relative;
   font-size: ${theme.fontSizes.subHeading};
 
- 
-
   &:hover {
     color: ${theme.colors.white};
-    animation: ${barrelRoll} 1s ease-in-out; 
+    animation: ${barrelRoll} 1s ease-in-out;
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
   }
 
-   @media (max-width: 750px) {
-    font-size: ${theme.fontSizes.mobileSubHeading};
+  @media (max-width: 750px) {
+    font-size: ${theme.fontSizes.mobileSubHeading}; 
+    margin-bottom: 10px; 
   }
-`
+`;
+
 export const NoAnimationMenuItem = styled.li`
   list-style: none;
   color: ${theme.colors.highLightPurple};
   cursor: pointer;
   position: relative;
   font-size: ${theme.fontSizes.subHeading};
-`
 
+  @media (max-width: 750px) {
+    font-size: ${theme.fontSizes.mobileSubHeading};
+    margin-bottom: 10px;
+  }
+`;
 
 export const LinkItem = styled(Link)`
   text-decoration: none;
@@ -92,4 +99,9 @@ export const LinkItem = styled(Link)`
   cursor: pointer;
   position: relative;
   font-size: ${theme.fontSizes.subHeading};
-`
+
+  @media (max-width: 750px) {
+    font-size: ${theme.fontSizes.mobileSubHeading};
+    margin-bottom: 10px; 
+  }
+`;
