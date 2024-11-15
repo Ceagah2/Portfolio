@@ -1,7 +1,9 @@
-const colors = {
-  primary: "#1B2838", // Fundo principal (azul-escuro típico da Steam)
-  secondary: "#171A21", // Fundo secundário (mais escuro)
+export const colors = {
+  primaryBg: "#191131", // Fundo principal (azul-escuro típico da Steam)
+  secondaryBg: "#060917", // Fundo secundário (mais escuro)
   accent: "#66C0F4", // Azul vibrante para destaques
+  headerGradientFrom: '#152044',
+  headerGradientTo: '#201e3c',
   textPrimary: "#C7D5E0", // Texto principal (cinza claro)
   textSecondary: "#8F98A0", // Texto secundário (cinza escuro)
   border: "#4D4D4D", // Cor de bordas ou divisores
@@ -11,4 +13,5 @@ const colors = {
   error: "#A23427", // Vermelho para erros
 };
 
-export default colors;
+
+

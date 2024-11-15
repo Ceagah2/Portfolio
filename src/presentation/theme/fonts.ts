@@ -1,4 +1,4 @@
-const fonts = {
+export const fonts = {
   primary: "'Motiva Sans', sans-serif",
   secondary: "'Arial', sans-serif",
   weights: {
@@ -14,4 +14,4 @@ const fonts = {
   },
 };
 
-export default fonts;
+
