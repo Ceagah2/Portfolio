@@ -1,11 +1,11 @@
-import Forbidden from "./pages/404"
-import Home from "./pages/Home"
-import Jobs from "./pages/Jobs"
 
 import {
   RouterProvider,
   createBrowserRouter,
 } from 'react-router-dom'
+import Home from './presentation/pages/Home/Home'
+import Jobs from './presentation/pages/Jobs/Jobs'
+import NotFound from './presentation/pages/NotFound/NotFound'
 
 function App() {
   const router = createBrowserRouter([
@@ -20,7 +20,7 @@ function App() {
     },
     {
       path:'*',
-      element: <Forbidden />
+      element: <NotFound />
     }
   ])
 
