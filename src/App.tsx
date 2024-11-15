@@ -1,12 +1,10 @@
+import Forbidden from "./pages/404"
 import Home from "./pages/Home"
 import Jobs from "./pages/Jobs"
-import Forbidden from "./pages/404"
 
 import {
   RouterProvider,
   createBrowserRouter,
-  
-
 } from 'react-router-dom'
 
 function App() {
