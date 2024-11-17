@@ -1,4 +1,5 @@
-import { Container } from "@/presentation/components/atoms/Container/Container";
+import { Container } from "../../components/atoms";
+
 
 export default function Jobs() {
   return <Container>Jobs</Container>;
