@@ -1,4 +1,4 @@
-import { IKonami } from '../validation/@types/types';
+import { IKonami } from './../../validation/@types/types';
 
 export const KonamiCode = ({ setSecretCode, startAnimation }: IKonami) => {
   let index = 0;
