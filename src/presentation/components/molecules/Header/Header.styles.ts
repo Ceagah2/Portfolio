@@ -96,7 +96,7 @@ export const ExperienceText = styled.span`
   font-family: ${fonts.primary};
   font-size: ${fonts.sizes.medium};
   border: 3px solid ${colors.accent};
-  padding: 0.2rem;
+  padding: 0.2rem 0.3rem .2rem 0.3rem;
   border-radius: 50%;
 `;
 
