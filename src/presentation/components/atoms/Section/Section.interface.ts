@@ -1,5 +1,6 @@
 export interface ISection {
   title: string;
-  redirectLink: string;
-  children: React.ReactNode
+  redirectLink?: string;
+  children: React.ReactNode;
+  height?: string
 }

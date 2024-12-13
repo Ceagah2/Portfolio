@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { colors, fonts } from '../../../theme';
 export const Container = styled.section`
-  width: 70%;
-  min-height: 30vh;
+  width: 73%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

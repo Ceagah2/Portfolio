@@ -11,4 +11,5 @@ export const Container = styled.section`
   align-items: flex-start;
   background-image: linear-gradient(${theme.colors.headerGradientFrom}, ${theme.colors.headerGradientTo});
   padding: 16px;
+  position: relative;
 `
