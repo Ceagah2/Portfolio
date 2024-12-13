@@ -1,16 +1,20 @@
 {
   "eng": {
     "experience": "Years of Experience",
-    "projects": "Projects",
+    "projects": "Side projects",
     "contact": "Contact",
     "job": "Job Experiences",
-    "view": "View more"
+    "view": "View more",
+    "badges": "Badges",
+    "certificates": "Certificates"
   },
   "pt": {
     "experience": "Anos de experiencia",
-    "projects": "Projetos",
+    "projects": "Projetos paralelos",
     "contact": "Contato",
     "job": "Experiência Profissional",
-    "view": "Ver mais"
+    "view": "Ver mais",
+    "badges": "Conquistas",
+    "certificates": "Certificados"
   }
 }

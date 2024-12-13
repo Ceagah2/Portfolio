@@ -15,5 +15,10 @@ export interface ITranslationData {
     eng: { [key: string]: string };
     pt: { [key: string]: string };
   };
+  projects: {
+    pt: string;
+    eng: string;
+  };
+  certificates: { [key: string]: string }[];
   messages: string[];
 }
