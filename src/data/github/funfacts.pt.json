@@ -1,0 +1,74 @@
+{
+  "funFacts": [
+    {
+      "id": 1,
+      "name": "Night Owl",
+      "description": "500+ commits após a meia-noite.",
+      "icon": "🌙",
+      "phrase": "A criatividade flui melhor à noite."
+    },
+    {
+      "id": 2,
+      "name": "Bug Whisperer",
+      "description": "Corrigiu bugs misteriosos que ninguém mais conseguia resolver.",
+      "icon": "🕵️‍♂️",
+      "phrase": "O Sherlock Holmes dos bugs."
+    },
+    {
+      "id": 3,
+      "name": "Keyboard Ninja",
+      "description": "Código escrito com eficiência e sem pausas por 3 horas.",
+      "icon": "🥋",
+      "phrase": "Agilidade no teclado, precisão no código."
+    },
+    {
+      "id": 4,
+      "name": "Stack Hoarder",
+      "description": "Possui 100+ abas abertas ao mesmo tempo durante o trabalho.",
+      "icon": "🗂️",
+      "phrase": "Um mestre das multitarefas."
+    },
+    {
+      "id": 5,
+      "name": "AI Collaborator",
+      "description": "100+ consultas ao ChatGPT para resolver problemas.",
+      "icon": "🤖",
+      "phrase": "Parceiro de IA para soluções inovadoras."
+    },
+    {
+      "id": 6,
+      "name": "Code Marathoner",
+      "description": "Participou de 1 hackathon ou desafios de programação.",
+      "icon": "🏃‍♂️",
+      "phrase": "Códigos ratificados, soluções certeiras."
+    },
+    {
+      "id": 7,
+      "name": "Pixel Perfectionist",
+      "description": "Entregou 20+ designs responsivos e funcionais.",
+      "icon": "🎨",
+      "phrase": "Quando design encontra funcionalidade."
+    },
+    {
+      "id": 8,
+      "name": "Clean Architect",
+      "description": "Seguiu os princípios SOLID e Clean Architecture em 5+ projetos.",
+      "icon": "🏛️",
+      "phrase": "Construindo fundações solidas para o futuro."
+    },
+    {
+      "id": 9,
+      "name": "Tech Explorer",
+      "description": "Dominou 5+ frameworks e bibliotecas populares (React, Vue.js, etc.).",
+      "icon": "🚀",
+      "phrase": "Explorando novas tecnologias todos os dias."
+    },
+    {
+      "id": 10,
+      "name": "Full-Stack Alchemist",
+      "description": "Criou 3 aplicações completas, do back ao front-end",
+      "icon": "⚗️",
+      "phrase": "Transformando ideias em realidade digital."
+    }
+  ]
+}
