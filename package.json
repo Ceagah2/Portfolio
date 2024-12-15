@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/axios": "^0.14.4",
     "@types/styled-components": "^5.1.29",
+    "axios": "^1.7.9",
     "framer-motion": "^10.16.4",
     "git-conventional-commits": "^2.6.5",
     "i18next": "^23.16.5",
