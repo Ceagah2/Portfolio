@@ -13,7 +13,7 @@ export default function Home() {
         <Section title={t("terms.job")} redirectLink="/">
           {" "}
         </Section>
-        <Section title={t("terms.projects")} redirectLink="/">
+        <Section title={t("terms.projects")} >
           {" "}
         </Section>
         <Section title={t("terms.certificates")} height="15vh">
