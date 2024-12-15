@@ -2,6 +2,7 @@ import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { secretCodeAtom } from "../../../../data/store/Atoms";
+import i18n, { switchLanguage } from "../../../../infra/translate/i18n";
 import messages from '../../../../infra/translate/messages.json';
 import { AVATAR_URL, techStack } from "../../../../infra/utils/constants";
 import { KonamiCode } from '../../../../infra/utils/konami';
@@ -16,6 +17,9 @@ export const Header = () => {
   const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false);
   const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
   const { t } = useTranslation();
+  const currentLanguage = i18n.language;
+  const flagEmoji = currentLanguage === "en" ? "🇺🇸" : "🇧🇷";
+
 
   const animationTime = () => {
     setIsAnimationActive(true);
@@ -67,7 +71,21 @@ export const Header = () => {
         <S.ProfileImage src={AVATAR_URL} alt="Imagem de Perfil" />
       </S.ProfileContainer>
       <S.DataContainer>
-        <S.NickName>Carlos Ceagah</S.NickName>
+        <S.NickName>
+          Carlos Ceagah{" "}
+          <S.FlagButton
+            onClick={switchLanguage}
+            whileHover={{ scale: 1.2, rotate: 15 }}
+            whileTap={{ scale: 0.9, rotate: -15 }}
+            title={
+              currentLanguage === "en"
+                ? "Switch to Portuguese"
+                : "Switch to English"
+            }
+          >
+            {flagEmoji}
+          </S.FlagButton>
+        </S.NickName>
         <S.FullName>Carlos Henrique de Moura - 🇧🇷 São Paulo </S.FullName>
         <S.Bio>{t("bio")}</S.Bio>
       </S.DataContainer>

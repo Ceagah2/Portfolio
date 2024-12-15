@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { colors, fonts } from '../../../theme';
 
@@ -55,6 +56,15 @@ export const NickName = styled.h2`
   font-family: ${fonts.primary};
   font-size: ${fonts.sizes.large};
 `
+
+export const FlagButton = styled(motion.button)`
+  background: transparent;
+  border: 1px solid ${colors.border};
+  padding: 8px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 1.5rem;
+`;
 
 export const FullName = styled.span`
   color: ${colors.textSecondary};
