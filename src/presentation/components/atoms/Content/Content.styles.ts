@@ -3,7 +3,7 @@ import * as theme from "../../../theme";
 
 
 export const Container = styled.section`
-  width: 50%;
+  width: 60%;
   height: 100vh;
   display: flex;
   flex-direction: column;

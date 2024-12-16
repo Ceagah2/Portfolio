@@ -37,4 +37,10 @@ export const MoreText = styled.span`
   }
 `;
 
-export const Section = styled.div``
+export const Section = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`
