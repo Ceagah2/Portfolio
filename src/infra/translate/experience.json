@@ -90,7 +90,9 @@
     "skills": [
         { "name": "Javascript", "score": 5 },
         { "name": "React Native", "score": 5 },
-        { "name": "TypeScript", "score": 5 }
+        { "name": "TypeScript", "score": 5 },
+        { "name": "Expo framework", "score": 5 },
+        { "name": "Native permissions", "score": 5 }
       ],
     "dateRange": "04/2024 to 12/2024"
     }
@@ -187,7 +189,9 @@
    "skills": [
       { "name": "Javascript", "score": 5 },
       { "name": "React Native", "score": 5 },
-      { "name": "TypeScript", "score": 5 }
+      { "name": "TypeScript", "score": 5 },
+      { "name": "Expo framework", "score": 5 },
+      { "name": "Controle de permissões", "score": 5 }
     ],
     "dateRange": "04/2024 a 12/2024"
   }
