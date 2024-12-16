@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors, fonts } from '../../../theme';
 
 export const Container = styled.header`
-  width: 50%;
+  width: 60%;
   height: 25vh;
   display: flex;
   flex-direction: row;
@@ -75,7 +75,7 @@ export const FullName = styled.span`
 export const Bio = styled.p`
   color: ${colors.textPrimary};
   font-family: ${fonts.primary};
-  font-size: ${fonts.sizes.small};
+  font-size: ${fonts.sizes.medium};
   margin-top: 1rem;
 `;
 
