@@ -8,7 +8,7 @@ export const Container = styled.aside`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 8px;
   background: ${colors.backgroundLight};
   position: absolute;

@@ -2,72 +2,72 @@
   "funFacts": [
     {
       "id": 1,
-      "name": "Night Owl",
+      "name": "Coruja Noturna",
       "description": "500+ commits após a meia-noite.",
-      "icon": "🌙",
+      "icon": "https://img.icons8.com/color/48/moon-symbol.png",
       "phrase": "A criatividade flui melhor à noite."
     },
     {
       "id": 2,
-      "name": "Bug Whisperer",
+      "name": "Sussurrador de Bugs",
       "description": "Corrigiu bugs misteriosos que ninguém mais conseguia resolver.",
-      "icon": "🕵️‍♂️",
+      "icon": "https://img.icons8.com/color/48/bug.png",
       "phrase": "O Sherlock Holmes dos bugs."
     },
     {
       "id": 3,
-      "name": "Keyboard Ninja",
+      "name": "Ninja do Teclado",
       "description": "Código escrito com eficiência e sem pausas por 3 horas.",
-      "icon": "🥋",
+      "icon": "https://img.icons8.com/color/48/keyboard.png",
       "phrase": "Agilidade no teclado, precisão no código."
     },
     {
       "id": 4,
-      "name": "Stack Hoarder",
+      "name": "Acumulador de Abas",
       "description": "Possui 100+ abas abertas ao mesmo tempo durante o trabalho.",
-      "icon": "🗂️",
+      "icon": "https://img.icons8.com/color/48/opened-folder.png",
       "phrase": "Um mestre das multitarefas."
     },
     {
       "id": 5,
-      "name": "AI Collaborator",
+      "name": "Colaborador de IA",
       "description": "100+ consultas ao ChatGPT para resolver problemas.",
-      "icon": "🤖",
+      "icon": "https://img.icons8.com/color/48/artificial-intelligence.png",
       "phrase": "Parceiro de IA para soluções inovadoras."
     },
     {
       "id": 6,
-      "name": "Code Marathoner",
+      "name": "Maratonista de Código",
       "description": "Participou de 1 hackathon ou desafios de programação.",
-      "icon": "🏃‍♂️",
+      "icon": "https://img.icons8.com/color/48/sports-mode.png",
       "phrase": "Códigos ratificados, soluções certeiras."
     },
     {
       "id": 7,
-      "name": "Pixel Perfectionist",
+      "name": "Perfeccionista de Pixels",
       "description": "Entregou 20+ designs responsivos e funcionais.",
-      "icon": "🎨",
+      "icon": "https://img.icons8.com/color/48/design.png",
       "phrase": "Quando design encontra funcionalidade."
     },
     {
       "id": 8,
-      "name": "Clean Architect",
+      "name": "Arquiteto Limpo",
       "description": "Seguiu os princípios SOLID e Clean Architecture em 5+ projetos.",
-      "icon": "🏛️",
-      "phrase": "Construindo fundações solidas para o futuro."
+      "icon": "https://img.icons8.com/color/48/building.png",
+      "phrase": "Construindo fundações sólidas para o futuro."
     },
     {
       "id": 9,
-      "name": "Tech Explorer",
+      "name": "Explorador Tecnológico",
       "description": "Dominou 5+ frameworks e bibliotecas populares (React, Vue.js, etc.).",
-      "icon": "🚀",
+      "icon": "https://img.icons8.com/color/48/rocket.png",
       "phrase": "Explorando novas tecnologias todos os dias."
     },
     {
       "id": 10,
-      "name": "Full-Stack Alchemist",
-      "description": "Criou 3 aplicações completas, do back ao front-end",
-      "icon": "⚗️",
+      "name": "Alquimista Full-Stack",
+      "description": "Criou 3 aplicações completas, do back ao front-end.",
+      "icon": "https://img.icons8.com/color/48/potion.png",
       "phrase": "Transformando ideias em realidade digital."
     }
   ]
