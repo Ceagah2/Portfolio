@@ -5,7 +5,13 @@ import { IJobExperiences } from "validation/@types/types";
 import Experiences from '../../../infra/translate/experience.json';
 import SideProjects from '../../../infra/translate/projects.json';
 import { Container, Content, Section, Sidebar } from "../../components/atoms";
-import { ExperienceCard, Header, ProjectCard } from "../../components/molecules";
+import {
+  Certificates,
+  ExperienceCard,
+  Header,
+  ProjectCard,
+} from "../../components/molecules";
+
 
 export default function Home() {
   const currentLanguage = localStorage.getItem("language") || "en";
@@ -86,7 +92,7 @@ export default function Home() {
               ))}
         </Section>
         <Section title={t("terms.certificates")} height="15vh">
-          {" "}
+          <Certificates />
         </Section>
         <Sidebar />
       </Content>
