@@ -3,8 +3,8 @@ import { colors, fonts } from '../../../theme';
 
 
 export const Container = styled.aside`
-  height: 75vh;
-  width: 12vw;
+  height: 90%;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   align-items: center;
