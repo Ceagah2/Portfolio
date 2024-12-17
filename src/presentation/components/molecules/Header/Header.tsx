@@ -103,11 +103,16 @@ export const Header = () => {
         )}
         <S.StackContainer>
           <S.StackTitle>Stack</S.StackTitle>
-          {techStack.map((tech, index) => (
-            <S.StackText key={index}>
-              {tech.name} {tech.emoji}
-            </S.StackText>
-          ))}
+          <S.BadgeContainer>
+            {techStack.map((tech, index) => (
+              <S.BadgeImage
+                key={index}
+                src={tech.badgeUrl}
+                alt={`${tech.name} badge`}
+                title={tech.name}
+              />
+            ))}
+          </S.BadgeContainer>
         </S.StackContainer>
       </S.ExperienceContainer>
     </S.Container>

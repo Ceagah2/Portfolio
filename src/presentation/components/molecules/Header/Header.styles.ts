@@ -131,3 +131,22 @@ export const StackText = styled.span`
   font-family: ${fonts.primary};
   font-size: ${fonts.sizes.small};
 `
+
+export const BadgeContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 4px;
+  width: 100%;
+`;
+
+export const BadgeImage = styled.img`
+  width: 75px;
+  max-width: 140px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
