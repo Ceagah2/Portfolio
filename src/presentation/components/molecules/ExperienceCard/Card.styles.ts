@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { colors } from "../../../theme";
 
 export const CardContainer = styled.div`
   width: 250px;
   height: 400px;
-  background-color: #1a1a1a;
+  background-color: ${colors.cardBg};
   border-radius: 8px;
   padding: 16px;
   margin: 8px 0;
