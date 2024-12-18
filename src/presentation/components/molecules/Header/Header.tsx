@@ -7,8 +7,10 @@ import i18n, { switchLanguage } from "../../../../infra/translate/i18n";
 import messages from '../../../../infra/translate/messages.json';
 import { AVATAR_URL, techStack } from "../../../../infra/utils/constants";
 import { KonamiCode } from '../../../../infra/utils/konami';
+import Brasil from '../../../assets/brasil.svg';
 import frameGif from '../../../assets/frame-gif.png';
 import AudioSource from '../../../assets/item.wav';
+import Usa from '../../../assets/usa.svg';
 import { AnimatedImage, AudioComponent } from '../../atoms';
 import * as S from './Header.styles';
 
@@ -17,7 +19,7 @@ export const Header = () => {
   const { t } = useTranslation();
   const currentLanguage = i18n.language;
   const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
-  const flagEmoji = currentLanguage === "en" ? "🇺🇸" : "🇧🇷";
+  const flagEmoji = currentLanguage === "en" ? Usa : Brasil;
   const [yearsOfExperience, setYearsOfExperience] = useState<number>(0)
   const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false);
   const navigation = useNavigate()
@@ -67,7 +69,7 @@ export const Header = () => {
           <AnimatedImage />
         </>
       )}
-      <S.ProfileContainer onClick={ () => navigation('/')}>
+      <S.ProfileContainer onClick={() => navigation("/")}>
         <S.Frame src={frameGif} alt="Frame de Fogo" />
         <S.ProfileImage src={AVATAR_URL} alt="Imagem de Perfil" />
       </S.ProfileContainer>
@@ -84,7 +86,12 @@ export const Header = () => {
                 : "Switch to English"
             }
           >
-            {flagEmoji}
+            <img
+              key="en-us"
+              src={flagEmoji}
+              alt="Flag USA"
+              style={{ width: "24px", height: "24px" }}
+            />
           </S.FlagButton>
         </S.NickName>
         <S.FullName>Carlos Henrique de Moura - 🇧🇷 São Paulo </S.FullName>

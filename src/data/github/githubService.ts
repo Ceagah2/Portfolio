@@ -2,7 +2,12 @@ import axios from "axios";
 
 const GITHUB_API = "https://api.github.com";
 const GITHUB_USERNAME = "Ceagah2"; 
-const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
+const GITHUB_TOKEN = import.meta.env.VITE_APP_GITHUB_TOKEN;
+const isYolo = true
+const hasStarStruck = true
+const isPullShark = 'gold'
+const hasHeartOnSleeves = 'silver'
+const isGalaxyBrain = 'gold'
 
 
 const fetchFromGitHub = async (url: string): Promise<any> => {
@@ -68,5 +73,10 @@ export const fetchAllGitHubData = async () => {
     commits,
     prs,
     repos,
+    isYolo,
+    hasStarStruck,
+    isPullShark,
+    hasHeartOnSleeves,
+    isGalaxyBrain
   };
 };

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Badges } from '../../../components/molecules';
+import { Badges, GithubBadge } from '../../../components/molecules';
 import * as S from './SideBar.styles';
 export const Sidebar = () => {
     const { t } = useTranslation();
@@ -8,6 +8,8 @@ export const Sidebar = () => {
   return (
     <S.Container>
       <S.Title> {t("terms.badges")} </S.Title>
+      <GithubBadge />
+      <S.Title> {t("terms.personalBadges")} </S.Title>
       <Badges language={language} />
     </S.Container>
   );
