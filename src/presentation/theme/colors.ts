@@ -12,6 +12,9 @@ export const colors = {
   warning: "#B8920B", // Amarelo para alertas
   error: "#A23427", // Vermelho para erros
   cardBg: "#1a1a1a", // Background dos cards
+
+  white: "#fff", // white
+  shadow: "rgba(0, 0, 0, 0.2)", //shadow color
 };
 
 
