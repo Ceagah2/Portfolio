@@ -22,6 +22,7 @@ export const ProfileContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: black;
+  cursor: pointer;
 `;
 
 export const Frame = styled.img`

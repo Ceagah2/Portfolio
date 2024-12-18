@@ -1,6 +1,7 @@
 import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router-dom';
 import { secretCodeAtom } from "../../../../data/store/Atoms";
 import i18n, { switchLanguage } from "../../../../infra/translate/i18n";
 import messages from '../../../../infra/translate/messages.json';
@@ -13,13 +14,13 @@ import * as S from './Header.styles';
 
 
 export const Header = () => {
-  const [yearsOfExperience, setYearsOfExperience] = useState<number>(0)
-  const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false);
-  const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
   const { t } = useTranslation();
   const currentLanguage = i18n.language;
+  const [secretCode, setSecretCode] = useAtom(secretCodeAtom);
   const flagEmoji = currentLanguage === "en" ? "🇺🇸" : "🇧🇷";
-
+  const [yearsOfExperience, setYearsOfExperience] = useState<number>(0)
+  const [isAnimationActive, setIsAnimationActive] = useState<boolean>(false);
+  const navigation = useNavigate()
 
   const animationTime = () => {
     setIsAnimationActive(true);
@@ -66,7 +67,7 @@ export const Header = () => {
           <AnimatedImage />
         </>
       )}
-      <S.ProfileContainer>
+      <S.ProfileContainer onClick={ () => navigation('/')}>
         <S.Frame src={frameGif} alt="Frame de Fogo" />
         <S.ProfileImage src={AVATAR_URL} alt="Imagem de Perfil" />
       </S.ProfileContainer>

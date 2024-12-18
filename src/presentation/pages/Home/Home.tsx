@@ -51,7 +51,7 @@ export default function Home() {
     <Container>
       <Header />
       <Content>
-        <Section title={t("terms.job")} redirectLink="/" height="40vh">
+        <Section title={t("terms.job")} redirectLink="/jobs" height="40vh">
           {currentLanguage === "en"
             ? latestExperiencesEng.map((exp, index) => (
                 <ExperienceCard

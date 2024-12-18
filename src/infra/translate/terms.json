@@ -6,7 +6,8 @@
     "job": "Job Experiences",
     "view": "View more",
     "badges": "Badges",
-    "certificates": "Certificates"
+    "certificates": "Certificates",
+    "jobsDescriptions": "Here you will find all my detailed professional experience, more than just the cards."
   },
   "pt": {
     "experience": "Anos de experiencia",
@@ -15,6 +16,7 @@
     "job": "Experiência Profissional",
     "view": "Ver mais",
     "badges": "Conquistas",
-    "certificates": "Certificados"
+    "certificates": "Certificados",
+    "jobsDescriptions": "Aqui voce encontrará todos os meus detalhes de experiencia profissional, mais do que apenas os cards."
   }
 }
