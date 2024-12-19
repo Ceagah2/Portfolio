@@ -3,7 +3,7 @@ import { colors } from "../../../theme";
 
 export const CardContainer = styled.div`
   width: 250px;
-  height: 400px;
+  height: 350px;
   background-color: ${colors.cardBg};
   border-radius: 8px;
   padding: 16px;
@@ -15,6 +15,16 @@ export const CardContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   gap: 8px;
+
+  @media screen and (max-width: 1300px) {
+    height: 350px;
+    width: 225px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    height: 350px;
+    width: 300px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -59,4 +69,12 @@ export const DateRange = styled.p`
   font-size: 0.9rem;
   color: #a5a5a5;
   margin: 0;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1100px) {
+    display: block;
+  }
 `;

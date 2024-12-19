@@ -13,7 +13,7 @@ export const Section = (props: ISection) => {
     navigation(navigateLink)
   }
   return (
-    <S.Container style={{ height: props.height ?? "30vh" }}>
+    <S.Container height={props.height || "30vh"}>
       <S.TitleContainer>
         <S.SectionTitle>{props.title}</S.SectionTitle>
         {props.redirectLink && (

@@ -21,6 +21,16 @@ export const CardContainer = styled.div`
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
   }
+
+  @media screen and (max-width: 1300px) {
+    height: 300px;
+    width: 250px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    height: 375px;
+    width: 220px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -64,5 +74,9 @@ export const MoreInfoButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 1300px) {
+    display: none;
   }
 `;

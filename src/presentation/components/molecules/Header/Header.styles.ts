@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors, fonts } from '../../../theme';
 
 export const Container = styled.header`
-  width: 60%;
+  width: 70%;
   height: 25vh;
   display: flex;
   flex-direction: row;
@@ -11,6 +11,21 @@ export const Container = styled.header`
   align-items: center;
   padding: 1rem;
   background: ${colors.headerGradientFrom};
+
+  @media screen and (max-width: 1500px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 1150px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 
 `;
 

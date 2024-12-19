@@ -15,12 +15,29 @@ import {
 
 export default function Home() {
   const currentLanguage = localStorage.getItem("language") || "en";
-  const [latestExperiencesEng, setLatestExperiencesEng] =
-    useState<IJobExperiences[]>([]);
-  const [latestExperiencesPt, setLatestExperiencesPt] =
-    useState<IJobExperiences[]>([]);
+  const [columns, setColumns] = useState<number>(3)
+  const [latestExperiencesEng, setLatestExperiencesEng] = useState<
+    IJobExperiences[]
+  >([]);
+  const [latestExperiencesPt, setLatestExperiencesPt] = useState<
+    IJobExperiences[]
+  >([]);
   const { t } = useTranslation();
 
+  useEffect(() => {
+    const updateColumns = () => {
+      if (window.innerWidth <= 1100) {
+        setColumns(2); 
+      } else {
+        setColumns(3); 
+      }
+    };
+    updateColumns();
+    window.addEventListener("resize", updateColumns);
+    return () => {
+      window.removeEventListener("resize", updateColumns);
+    };
+  }, []);
 
   useEffect(() => {
     const getLatestExperiences = () => {
@@ -28,24 +45,22 @@ export default function Home() {
         (a, b) => {
           const dateA = new Date(a.dateRange.split(" to ")[0]);
           const dateB = new Date(b.dateRange.split(" to ")[0]);
-          return dateB.getTime() - dateA.getTime();
+          return dateA.getTime() + dateB.getTime();
         }
-      ).slice(4, 7); 
+      ).slice(-columns); 
 
       const sortedExperiencesPt = Experiences.JobExperiencesPt.sort((a, b) => {
         const dateA = new Date(a.dateRange.split(" to ")[0]);
         const dateB = new Date(b.dateRange.split(" to ")[0]);
         return dateB.getTime() - dateA.getTime();
-      }).slice(4, 7); 
+      }).slice(-columns);
 
       setLatestExperiencesEng(sortedExperiencesEng);
       setLatestExperiencesPt(sortedExperiencesPt);
-
     };
+
     getLatestExperiences();
-  }, []);
-
-
+  }, [columns]); 
 
   return (
     <Container>
@@ -78,7 +93,7 @@ export default function Home() {
                   title={project.title}
                   description={project.description}
                   techsUsed={project.techsUsed}
-                  link={project.link ?? ''}
+                  link={project.link ?? ""}
                 />
               ))
             : SideProjects.ProjectsPt.map((project, index) => (
@@ -87,7 +102,7 @@ export default function Home() {
                   title={project.title}
                   description={project.description}
                   techsUsed={project.techsUsed}
-                  link={project.link ?? ''}
+                  link={project.link ?? ""}
                 />
               ))}
         </Section>

@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { colors, fonts } from '../../../theme';
-export const Container = styled.section`
+
+type ContainerType = {
+  height: string
+}
+
+export const Container = styled.section<ContainerType>`
+  height: ${props => props.height};
   width: 73%;
   display: flex;
   flex-direction: column;
@@ -8,6 +14,10 @@ export const Container = styled.section`
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
   margin-bottom: 1rem;
+  
+  @media screen and (max-width: 1500px) {
+    height: 40vh;
+  }
 `
 export const TitleContainer = styled.div`
   width: 100%;
@@ -43,4 +53,4 @@ export const Section = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-`
+`;

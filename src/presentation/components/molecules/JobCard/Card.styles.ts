@@ -17,6 +17,8 @@ export const CardContainer = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+
+ 
 `;
 
 export const Title = styled.h2`
@@ -29,6 +31,10 @@ export const DateRange = styled.p`
   font-size: 0.9rem;
   color: #c4c4c4;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export const Description = styled.p`
