@@ -12,6 +12,17 @@ export const Container = styled.header`
   padding: 1rem;
   background: ${colors.headerGradientFrom};
 
+  @media screen and (max-width: 1500px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 1150px) {
+    width: 95%;
+  }
+
   @media screen and (max-width: 1000px) {
     width: 100%;
     flex-direction: column;

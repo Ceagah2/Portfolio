@@ -85,7 +85,7 @@ export default function Home() {
                 />
               ))}
         </Section>
-        <Section title={t("terms.projects")} height="35vh">
+        <Section title={t("terms.projects")} height="35vh" redirectLink="/experiences">
           {currentLanguage === "en"
             ? SideProjects.ProjectsEng.map((project, index) => (
                 <ProjectCard
