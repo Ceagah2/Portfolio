@@ -1,0 +1,16 @@
+{
+  "certificates": [
+    {
+      "name": "ReactJS, Hooks, Recoil, TDD, Clean Architecture, SOLID ",
+      "company": "Rodrigo Manguinho + Udemy",
+      "date": "2022",
+      "link": "https://www.udemy.com/course/react-com-mango"
+    },
+    {
+      "name": "NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID",
+      "company": "Rodrigo Manguinho + Udemy",
+      "date": "2024",
+      "link": "https://www.udemy.com/course/tdd-com-mango/"
+    }
+  ]
+}
