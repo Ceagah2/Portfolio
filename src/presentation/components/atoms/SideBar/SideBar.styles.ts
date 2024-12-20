@@ -28,14 +28,14 @@ export const Container = styled.aside`
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%; /* Ocupa toda a largura */
-    height: auto; /* Ajusta a altura conforme o conteúdo */
-    position: relative; /* Muda para relative para evitar sobreposição */
+    width: 100%; 
+    height: auto;
+    position: relative; 
     top: 0;
     right: 0;
     padding-top: 8px;
-    margin-bottom: 16px; /* Adiciona um espaço entre a sidebar e o conteúdo abaixo */
-    box-shadow: none; /* Remove a sombra em telas menores para visual mais limpo */
+    margin-bottom: 16px; 
+    box-shadow: none; 
   }
 `;
 
