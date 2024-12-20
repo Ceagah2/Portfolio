@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-import { colors, fonts } from '../../../theme';
-
+import styled from "styled-components";
+import { colors, fonts } from "../../../theme";
 
 export const Container = styled.aside`
   height: 90%;
@@ -19,7 +18,7 @@ export const Container = styled.aside`
   @media screen and (max-width: 1500px) {
     width: 20vw;
   }
- 
+
   @media screen and (max-width: 1300px) {
     width: 22vw;
   }
@@ -27,14 +26,45 @@ export const Container = styled.aside`
   @media screen and (max-width: 1000px) {
     width: 25vw;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%; /* Ocupa toda a largura */
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    position: relative; /* Muda para relative para evitar sobreposição */
+    top: 0;
+    right: 0;
+    padding-top: 8px;
+    margin-bottom: 16px; /* Adiciona um espaço entre a sidebar e o conteúdo abaixo */
+    box-shadow: none; /* Remove a sombra em telas menores para visual mais limpo */
+  }
 `;
+
 export const Title = styled.h3`
   color: ${colors.textPrimary};
   font-family: ${fonts.primary};
   font-size: ${fonts.sizes.large};
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: ${fonts.sizes.medium};
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: ${fonts.sizes.small};
+  }
 `;
+
 export const Text = styled.span`
   color: ${colors.textSecondary};
   font-family: ${fonts.primary};
   font-size: ${fonts.sizes.small};
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.7rem;
+  }
 `;

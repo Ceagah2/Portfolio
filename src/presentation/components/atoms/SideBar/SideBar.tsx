@@ -3,7 +3,8 @@ import { Badges, GithubBadge } from '../../../components/molecules';
 import * as S from './SideBar.styles';
 export const Sidebar = () => {
     const { t } = useTranslation();
-    const language = localStorage.getItem("language") || "en";
+const language: "en" | "pt" =
+  (localStorage.getItem("language") as "en" | "pt") || "en";
   
   return (
     <S.Container>
