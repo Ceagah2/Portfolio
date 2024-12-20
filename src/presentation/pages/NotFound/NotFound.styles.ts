@@ -46,6 +46,17 @@ export const Subtitle = styled.p`
   }
 `;
 
+export const Image = styled.img`
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+`;
+
 export const BackButton = styled.button`
   background-color: ${colors.accent};
   color: ${colors.primaryBg};
