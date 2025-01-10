@@ -188,8 +188,9 @@ export const ExperienceTitle = styled.span`
 
 export const ExperienceText = styled.span`
   color: ${colors.accent};
-  border: 3px solid ${colors.accent};
-  border-radius: 50%;
+  border: 2px solid ${colors.accent};
+  border-radius: 16px;
+  padding: 5px;
 
   @media screen and (max-width: 768px) {
     font-size: ${fonts.sizes.small};
