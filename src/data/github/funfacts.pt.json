@@ -4,70 +4,70 @@
       "id": 1,
       "name": "Coruja Noturna",
       "description": "500+ commits após a meia-noite.",
-      "icon": "moon.png",
+      "icon": "moon",
       "phrase": "A criatividade flui melhor à noite."
     },
     {
       "id": 2,
       "name": "Sussurrador de Bugs",
       "description": "Corrigiu bugs misteriosos que ninguém mais conseguia resolver.",
-      "icon": "bug.png",
+      "icon": "bug",
       "phrase": "O Sherlock Holmes dos bugs."
     },
     {
       "id": 3,
       "name": "Ninja do Teclado",
       "description": "Código escrito com eficiência e sem pausas por 3 horas.",
-      "icon": "keyboard.png",
+      "icon": "keyboard",
       "phrase": "Agilidade no teclado, precisão no código."
     },
     {
       "id": 4,
       "name": "Acumulador de Abas",
       "description": "Possui 100+ abas abertas ao mesmo tempo durante o trabalho.",
-      "icon": "stack.png",
+      "icon": "stack",
       "phrase": "Um mestre das multitarefas."
     },
     {
       "id": 5,
       "name": "Colaborador de IA",
       "description": "100+ consultas ao ChatGPT para resolver problemas.",
-      "icon": "ai.png",
+      "icon": "ai",
       "phrase": "Parceiro de IA para soluções inovadoras."
     },
     {
       "id": 6,
       "name": "Maratonista de Código",
       "description": "Participou de 1 hackathon ou desafios de programação.",
-      "icon": "hackaton.png",
+      "icon": "hackaton",
       "phrase": "Códigos ratificados, soluções certeiras."
     },
     {
       "id": 7,
       "name": "Perfeccionista de Pixels",
       "description": "Entregou 20+ designs responsivos e funcionais.",
-      "icon": "design.png",
+      "icon": "design",
       "phrase": "Quando design encontra funcionalidade."
     },
     {
       "id": 8,
       "name": "Arquiteto Limpo",
       "description": "Seguiu os princípios SOLID e Clean Architecture em 5+ projetos.",
-      "icon": "clean.png",
+      "icon": "clean",
       "phrase": "Construindo fundações sólidas para o futuro."
     },
     {
       "id": 9,
       "name": "Explorador Tecnológico",
       "description": "Dominou 5+ frameworks e bibliotecas populares (React, Vue.js, etc.).",
-      "icon": "rocket.png",
+      "icon": "rocket",
       "phrase": "Explorando novas tecnologias todos os dias."
     },
     {
       "id": 10,
       "name": "Alquimista Full-Stack",
       "description": "Criou 3 aplicações completas, do back ao front-end.",
-      "icon": "fullstack.png",
+      "icon": "fullstack",
       "phrase": "Transformando ideias em realidade digital."
     }
   ]

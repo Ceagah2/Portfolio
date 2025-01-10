@@ -14,7 +14,7 @@ export const Badges: React.FC<BadgesProps> = ({ language }) => {
       const importedImages: Record<string, string> = {};
       for (const fact of badgesData) {
         importedImages[fact.icon] = (
-          await import(`../../../assets/funFactIcons/${fact.icon}`)
+          await import(`../../../assets/funFactIcons/${fact.icon}.png`)
         ).default;
       }
       setImages(importedImages);
