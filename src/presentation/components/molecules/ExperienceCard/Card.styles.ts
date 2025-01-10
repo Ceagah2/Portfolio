@@ -16,8 +16,8 @@ export const CardContainer = styled.div`
   flex-direction: column;
   gap: 8px;
 
-  @media screen and (max-width: 1300px) {
-    height: 350px;
+  @media screen and (max-width: 1350px) {
+    height: 325px;
     width: 225px;
   }
 
@@ -115,12 +115,10 @@ export const DateRange = styled.p`
   color: #a5a5a5;
   margin: 0;
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1350px) {
     display: none;
   }
-
   @media screen and (max-width: 1100px) {
-    display: block;
   }
 
   @media screen and (max-width: 768px) {

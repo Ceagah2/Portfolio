@@ -104,9 +104,11 @@ export const Header = () => {
           <S.ExperienceText>{yearsOfExperience}</S.ExperienceText>
         </S.TitleLine>
         {secretCode && (
-          <S.TitleLine>
-            <S.ExperienceTitle>{t("terms.experience")}</S.ExperienceTitle>
-            <S.ExperienceText>{yearsOfExperience}</S.ExperienceText>
+          <S.TitleLine style={{justifyContent: 'center'}}>
+            <S.SecretButton onClick={() => navigation('/secret')}>
+              <S.SecretEmoji>🥷</S.SecretEmoji>
+              {t("terms.secret")}
+            </S.SecretButton>
           </S.TitleLine>
         )}
         <S.StackContainer>

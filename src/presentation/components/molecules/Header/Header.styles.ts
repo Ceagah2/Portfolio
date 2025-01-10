@@ -26,7 +26,7 @@ export const Container = styled.header`
   @media screen and (max-width: 1000px) {
     width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
@@ -90,6 +90,7 @@ export const DataContainer = styled.div`
     width: 100%;
     padding-left: 0;
     padding-top: 1rem;
+    align-items: center;
   }
 `;
 
@@ -155,6 +156,7 @@ export const ExperienceContainer = styled.div`
 
   @media screen and (max-width: 1000px) {
     width: 100%;
+    margin-top: 1rem;
   }
 `;
 
@@ -163,9 +165,14 @@ export const TitleLine = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid ${colors.border};
   padding-bottom: 10px;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+  }
 `;
 
 export const ExperienceTitle = styled.span`
@@ -175,15 +182,13 @@ export const ExperienceTitle = styled.span`
 
   @media screen and (max-width: 768px) {
     font-size: ${fonts.sizes.medium};
+    margin-right: 1rem;
   }
 `;
 
 export const ExperienceText = styled.span`
   color: ${colors.accent};
-  font-family: ${fonts.primary};
-  font-size: ${fonts.sizes.medium};
   border: 3px solid ${colors.accent};
-  padding: 0.2rem 0.3rem;
   border-radius: 50%;
 
   @media screen and (max-width: 768px) {
@@ -254,3 +259,26 @@ export const StackTitle = styled.h3`
     margin-bottom: 4px;
   }
 `;
+
+export const SecretButton = styled.button`
+  background: transparent;
+  border: 1px solid ${colors.accent};
+  border-radius: 16px;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: ${colors.textPrimary};
+  font-size: ${fonts.sizes.medium};
+  &:hover {
+    background-color: ${colors.accent};
+    color: ${colors.primaryBg};
+    transition: all 0.3s ease;
+  }
+`;
+
+export const SecretEmoji = styled.span``;

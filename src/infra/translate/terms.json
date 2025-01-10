@@ -8,7 +8,9 @@
     "badges": "Github Badges",
     "personalBadges": "Personal Badges",
     "certificates": "Certificates",
-    "jobsDescriptions": "Here you will find all my detailed professional experience, more than just the cards."
+    "jobsDescriptions": "Here you will find all my detailed professional experience, more than just the cards.",
+    "secret": "Reach my secrets...",
+    "secretAreaGreeting": "Welcome to the portfolio secret area! Watch my video, and feel free to get in touch in my social medias"
   },
   "pt": {
     "experience": "Anos de experiencia",
@@ -19,6 +21,8 @@
     "badges": "Conquistas do Github",
     "personalBadges": "Conquistas Pessoais",
     "certificates": "Certificados",
-    "jobsDescriptions": "Aqui voce encontrará todos os meus detalhes de experiencia profissional, mais do que apenas os cards."
+    "jobsDescriptions": "Aqui voce encontrará todos os meus detalhes de experiencia profissional, mais do que apenas os cards.",
+    "secret": "Entrar na area secreta",
+    "secretAreaGreeting": "Bem-vindo ao portfolio secret area! Veja meu video e fique a vontade para entrar em contato nas minhas redes sociais"
   }
 }
