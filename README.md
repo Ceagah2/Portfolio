@@ -1,29 +1,36 @@
-# Ceagah's Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Description
+## Getting Started
 
-This portfolio project showcases my journey as a professional front end engineer in the tech industry. It includes a collection of my most relevant and personal projects, providing insights into my skills, experiences, and creative endeavors.
+First, run the development server:
 
-## Technologies Used
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Bellow you'll find all the tech that I've used in this projects, languages , libs and conventions.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- React.js + Vite framework [docs](https://vitejs.dev/)
-- Typescript [docs](https://www.typescriptlang.org/)
-- React Icons[docs](https://www.npmjs.com/package/react-icons)
-- React Router Dom [docs](https://www.npmjs.com/package/react-router-dom)
-- Styled-components [docs](https://styled-components.com/)
-- Conventional Commits [docs](https://www.conventionalcommits.org/pt-br/v1.0.0/)
-- GitHub API [docs](https://docs.github.com/pt/rest)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Project Purpose
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-I created this portfolio to curate and exhibit my personal projects, highlighting my expertise and capabilities. It serves as a platform to demonstrate my skills, explore creative solutions, and connect with potential collaborators, clients, or employers.
+## Learn More
 
-## Contact
+To learn more about Next.js, take a look at the following resources:
 
-Feel free to reach out for collaborations, projects, or inquiries:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Email: [carlosceagah@gmail.com](mailto:carlosceagah@gmail.com)
-- LinkedIn: [Carlos Ceagah Henrique](https://www.linkedin.com/in/carlosceagah/)
-- GitHub: [Ceagah2](https://github.com/Ceagah2)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
