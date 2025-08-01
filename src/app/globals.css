@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Motiva Sans';
+  src: url('/fonts/MotivaSansMedium.woff.ttf') format('woff2');
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text-white);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+
+/* APPLY ALL MY COLOR TOKENS TO ALL ELEMENTS */
+
+:root {
+  --primary-bg: #191131;
+  --secondary-bg: #0E0A1F;
+  --card-bg: #1a1a1a;
+  --background-light: #2A475E;
+  --text-primary: #C7D5E0;
+  --text-secondary: #8F98A0;
+  --text-muted: #6B7280;
+  --accent-default: #66C0F4;
+  --accent-light: #8ACFFF;
+  --accent-dark: #3B8FC2;
+  --success: #5C7E10;
+  --warning: #B8920B;
+  --error: #A23427;
+  --radiant-pink: #DD2A7B;
+  --border: #4D4D4D;
+  --white: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --font-sans: 'Roboto', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-steam: 'Motiva Sans', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-steam: 'Motiva Sans', sans-serif;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+}
