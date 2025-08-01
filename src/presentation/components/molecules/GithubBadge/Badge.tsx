@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { fetchAllGitHubData } from "../../../../data/github/githubService";
 import { BadgeData } from "../../../assets/badges/badges";
-import { default as Galaxy, default as Heart } from '../../../assets/badges/HeartOnYourSleeve-gold.png';
+import Galaxy from '../../../assets/badges/GalaxyBrain.png';
+import { default as Heart } from '../../../assets/badges/HeartOnYourSleeve-gold.png';
 import Pull from '../../../assets/badges/PullShark-gold.png';
 import Star from '../../../assets/badges/StarStruck.png';
 import Yolo from '../../../assets/badges/YOLO.png';
